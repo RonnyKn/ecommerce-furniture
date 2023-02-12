@@ -35,6 +35,7 @@ body {
 
 body {
   font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
 }
 
 h1,
@@ -61,4 +62,15 @@ h2 {
 a {
   text-decoration: none;
   color: unset;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }

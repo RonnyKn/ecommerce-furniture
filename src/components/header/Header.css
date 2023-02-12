@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background: var(--color-card-bg-01);
+  color: black;
+  height: 5rem;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);
+}
+
+.header-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.header-navicons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-navicons img {
+  width: 2.2rem;
+}
