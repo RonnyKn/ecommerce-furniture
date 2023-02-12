@@ -23,6 +23,6 @@ const serviceData = [
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#d6e5fb",
   },
-];
+]
 
-export default serviceData;
+export default serviceData
