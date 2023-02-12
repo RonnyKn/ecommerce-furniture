@@ -11,6 +11,7 @@ import Signup from "../pages/signup/Signup"
 const Routers = () => {
   return (
     <Routes>
+      <Route exact path="/" element={<Home />} />
       <Route path="home" element={<Home />} />
       <Route path="shop" element={<Shop />} />
       <Route path="shop:id" element={<ProductDetails />} />
