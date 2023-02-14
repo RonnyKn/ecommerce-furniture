@@ -1,25 +1,15 @@
 import "./Products.css"
-import React, { useEffect, useState } from "react"
-import products from "../../assets/data/products"
+import React from "react"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-import { AiOutlinePlusCircle } from "react-icons/ai"
+import { BsFillPlusCircleFill } from "react-icons/bs"
 
-const TrendingProducts = () => {
-  const [data, setData] = useState(products)
-
-  useEffect(() => {
-    const filteredProducts = products.filter(
-      (product) => product.category === "chair"
-    )
-    setData(filteredProducts)
-  }, [])
-
+const TrendingProducts = ({ dataTrending }) => {
   return (
     <section className="trending__products">
       <h3 className="trending__products-title">Trending Products</h3>
       <div className="container trending__products-container">
-        {data.map((val, idx) => (
+        {dataTrending.map((val, idx) => (
           <div className="trending" key={idx}>
             <Link to="shop:id">
               <motion.img
@@ -37,7 +27,7 @@ const TrendingProducts = () => {
                 <strong> $ {val?.price}</strong>
               </p>
               <button>
-                <AiOutlinePlusCircle size="1.8em" />
+                <BsFillPlusCircleFill size="1.8em" />
               </button>
             </div>
           </div>
