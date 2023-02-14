@@ -1,5 +1,6 @@
 import "./Header.css"
 import React from "react"
+import { motion } from "framer-motion"
 import { NavLink } from "react-router-dom"
 import { SlHandbag } from "react-icons/sl"
 import userIcon from "../../assets/images/user-icon.png"
@@ -44,7 +45,11 @@ const Header = () => {
         </div>
         <div className="header-navicons">
           <SlHandbag size="1.8em" />
-          <img src={userIcon} alt={`userIcon.png`} />
+          <motion.img
+            whileTap={{ scale: 1.2 }}
+            src={userIcon}
+            alt={`userIcon.png`}
+          />
         </div>
       </div>
     </header>
