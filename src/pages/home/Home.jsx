@@ -6,6 +6,8 @@ import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import Services from "../../components/services/Services"
 import TrendingProducts from "../../components/products/TrendingProducts"
+import timerImg from "../../assets/images/counter-timer-img.png"
+import Clock from "../../components/clock/Clock"
 
 const Home = () => {
   const year = new Date().getFullYear()
@@ -49,6 +51,22 @@ const Home = () => {
       <Services />
       <TrendingProducts filteredProducts={dataTrending} />
       <TrendingProducts filteredProducts={dataSales} title={true} />
+
+      <section className="timer">
+        <div className="container timer-container">
+          <div className="timer-left">
+            <p>Limited Offers</p>
+            <h3>Quality Armchair</h3>
+            <Clock />
+            <button>
+              <Link to="shop">Visit Store</Link>
+            </button>
+          </div>
+          <div className="timer-right">
+            <img src={timerImg} alt={`${timerImg}.png`} />
+          </div>
+        </div>
+      </section>
     </section>
   )
 }

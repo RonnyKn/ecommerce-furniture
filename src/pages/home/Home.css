@@ -22,3 +22,41 @@
 .hero-left h1 {
   line-height: 1.5;
 }
+
+/* =================Timer============== */
+.timer {
+  background: var(--color-primary);
+  color: var(--color-white);
+  padding: 3rem 0;
+}
+
+.timer-container {
+  display: flex;
+  width: var(--container-width-lg);
+  align-items: center;
+}
+
+.timer-left {
+  flex: 1;
+}
+
+.timer-left button {
+  margin-top: 1rem;
+  padding: .5rem .8rem;
+  border-radius: .5rem;
+  background: var(--color-white);
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.timer-right {
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.timer-right img {
+  width: 70%;
+}
+
+/* ================= EndTimer============== */
