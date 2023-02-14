@@ -10,7 +10,7 @@ const TrendingProducts = ({ filteredProducts, title }) => {
       {title === true ? (
         <h3 className="trending__products-title">Best Sales Product</h3>
       ) : (
-        <h3 className="trending__products-title">Trending Sales</h3>
+        <h3 className="trending__products-title">Trending Product</h3>
       )}
       <div className="container trending__products-container">
         {filteredProducts.map((val, idx) => (
