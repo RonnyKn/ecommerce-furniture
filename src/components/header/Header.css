@@ -35,3 +35,19 @@
 .nav-active {
   border-bottom: 2px solid black;
 }
+
+.header-cart {
+  position: relative;
+}
+
+.header-cart span {
+  display: block;
+  color: var(--color-white);
+  font-size: .7rem;
+  position: absolute;
+  right: 0;
+  top: -50%;
+  padding: .3rem;
+  border-radius: 50%;
+  background: red;
+}

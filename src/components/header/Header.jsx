@@ -44,7 +44,11 @@ const Header = () => {
           </ul>
         </div>
         <div className="header-navicons">
-          <SlHandbag size="1.8em" />
+          <div className="header-cart">
+            <SlHandbag size="1.8em" />
+            <span>2</span>
+          </div>
+
           <motion.img
             whileTap={{ scale: 1.2 }}
             src={userIcon}
