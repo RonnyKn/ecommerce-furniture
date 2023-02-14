@@ -74,3 +74,7 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
+section {
+  padding: 5rem 0;
+}
