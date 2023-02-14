@@ -1,5 +1,5 @@
 .home-hero {
-  background: var(--color-card-bg-02);
+  background: var(--color-hero-bg);
   box-shadow: inset 0px 0px 30px rgba(0, 0, 0, .4);
 }
 
@@ -8,6 +8,17 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  /* justify-content: center; */
   align-items: center;
+}
+
+.hero-left button {
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  background: var(--color-primary);
+  border-radius: .3rem;
+  color: var(--color-white);
+}
+
+.hero-left h1 {
+  line-height: 1.5;
 }
