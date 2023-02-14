@@ -10,12 +10,17 @@ import TrendingProducts from "../../components/products/TrendingProducts"
 const Home = () => {
   const year = new Date().getFullYear()
   const [dataTrending, setDataTrending] = useState([])
+  const [dataSales, setDataSales] = useState([])
 
   useEffect(() => {
     const TrendingProducts = products.filter(
       (product) => product.category === "chair"
     )
+    const SalesProducts = products.filter(
+      (product) => product.category === "sofa"
+    )
     setDataTrending(TrendingProducts)
+    setDataSales(SalesProducts)
   }, [])
 
   return (
@@ -42,7 +47,8 @@ const Home = () => {
         </div>
       </div>
       <Services />
-      <TrendingProducts dataTrending={dataTrending} />
+      <TrendingProducts filteredProducts={dataTrending} />
+      <TrendingProducts filteredProducts={dataSales} title={true} />
     </section>
   )
 }

@@ -4,12 +4,16 @@ import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import { BsFillPlusCircleFill } from "react-icons/bs"
 
-const TrendingProducts = ({ dataTrending }) => {
+const TrendingProducts = ({ filteredProducts, title }) => {
   return (
     <section className="trending__products">
-      <h3 className="trending__products-title">Trending Products</h3>
+      {title === true ? (
+        <h3 className="trending__products-title">Best Sales Product</h3>
+      ) : (
+        <h3 className="trending__products-title">Trending Sales</h3>
+      )}
       <div className="container trending__products-container">
-        {dataTrending.map((val, idx) => (
+        {filteredProducts.map((val, idx) => (
           <div className="trending" key={idx}>
             <Link to="shop:id">
               <motion.img
