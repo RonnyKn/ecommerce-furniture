@@ -4,6 +4,7 @@ import HeroImg from "../../assets/images/hero-img.png"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import Services from "../../components/services/Services"
+import TrendingProducts from "../../components/products/TrendingProducts"
 
 const Home = () => {
   const year = new Date().getFullYear()
@@ -32,6 +33,7 @@ const Home = () => {
         </div>
       </div>
       <Services />
+      <TrendingProducts />
     </section>
   )
 }
