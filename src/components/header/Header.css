@@ -5,6 +5,7 @@
   color: black;
   height: 5rem;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);
+  z-index: 99;
 }
 
 .header-container {
