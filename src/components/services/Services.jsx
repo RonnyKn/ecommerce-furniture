@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 const Services = () => {
   return (
     <section className="services">
+      <h3 className="services-title">Our Services</h3>
       <div className="container services-container">
         {serviceData.map((val, idx) => (
           <motion.div

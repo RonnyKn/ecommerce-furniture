@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   width: 100%;
-  background: var(--color-card-bg-01);
+  background: rgba(255, 255, 255, .7);
   color: black;
   height: 5rem;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, .4);

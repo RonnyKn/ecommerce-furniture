@@ -185,7 +185,7 @@ const products = [
   },
   {
     id: "07",
-    productName: "Sakarias Armchair",
+    productName: "Hulala Armchair",
     imgUrl: productImg07,
     category: "chair",
     price: 99,

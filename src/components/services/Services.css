@@ -5,13 +5,19 @@
 }
 
 .service {
-  padding: .5rem .8rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, .4);
   border-radius: .5rem;
+}
+
+.services-title {
+  margin: 0 auto 3rem;
+  width: var(--container-width-lg);
+  text-align: center;
 }
 
 .service-icon {
