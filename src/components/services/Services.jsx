@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 const Services = () => {
   return (
-    <div className="services">
+    <section className="services">
       <div className="container services-container">
         {serviceData.map((val, idx) => (
           <motion.div
@@ -22,7 +22,7 @@ const Services = () => {
           </motion.div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 
