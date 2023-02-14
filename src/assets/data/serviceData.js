@@ -1,24 +1,26 @@
+import { FiTruck, FiRefreshCw } from "react-icons/fi"
+import { RiSecurePaymentFill, RiExchangeDollarLine } from "react-icons/ri"
 const serviceData = [
   {
-    icon: "ri-truck-line",
+    icon: <FiTruck size="1.8em" />,
     title: "Free Shipping",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#fdefe6",
   },
   {
-    icon: "ri-refresh-line",
+    icon: <FiRefreshCw size="1.8em" />,
     title: "Easy Returns",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#ceebe9",
   },
   {
-    icon: "ri-secure-payment-line",
+    icon: <RiSecurePaymentFill size="1.8em" />,
     title: "Secure Payment",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#e2f2b2",
   },
   {
-    icon: "ri-exchange-dollar-line",
+    icon: <RiExchangeDollarLine size="1.8em" />,
     title: " Back Guarantee",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#d6e5fb",

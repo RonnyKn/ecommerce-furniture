@@ -1,0 +1,38 @@
+.services {
+  padding: 3rem 0;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.service {
+  padding: .5rem .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, .4);
+  border-radius: .5rem;
+}
+
+.service-icon {
+  padding: .8rem;
+  background: var(--color-primary);
+  border-radius: 50%;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-desc span {
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.service-desc p {
+  font-size: .8rem;
+}
