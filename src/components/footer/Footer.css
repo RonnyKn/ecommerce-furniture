@@ -43,3 +43,21 @@
 .footer-copyright p span {
   display: block;
 }
+
+/* ============MEDIA QUERIES============ */
+@media screen and (max-width:768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-permalinks {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

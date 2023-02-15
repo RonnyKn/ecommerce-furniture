@@ -15,10 +15,6 @@ const Header = () => {
       navbar: "Shop",
       to: "/shop",
     },
-    {
-      navbar: "Cart",
-      to: "/cart",
-    },
   ]
 
   return (

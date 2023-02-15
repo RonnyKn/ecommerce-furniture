@@ -38,3 +38,15 @@
 .service-desc p {
   font-size: .8rem;
 }
+
+@media screen and (max-width:768px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:550px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}

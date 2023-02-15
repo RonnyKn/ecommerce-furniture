@@ -51,3 +51,10 @@
   border-radius: 50%;
   background: red;
 }
+
+/* =============MEDIA QUERIES=========== */
+@media screen and (max-width:550px) {
+  .header-nav ul {
+    gap: 1rem;
+  }
+}

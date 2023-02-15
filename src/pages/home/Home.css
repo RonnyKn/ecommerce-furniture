@@ -60,6 +60,49 @@
   width: 70%;
 }
 
-
-
 /* ================= EndTimer============== */
+
+/* ===========MEDIA QUERIES=========== */
+
+@media screen and (max-width:768px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  .hero-left h1 {
+    line-height: 1.3;
+    font-size: 1rem;
+  }
+
+  .hero-left p {
+    line-height: 1.3;
+    font-size: .7rem;
+  }
+
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:550px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .home-hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-left strong {
+    font-size: .8rem;
+  }
+
+  .timer-container {
+    flex-direction: column;
+
+  }
+
+  .timer-right img {
+    width: 100%;
+  }
+}

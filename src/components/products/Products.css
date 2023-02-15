@@ -28,3 +28,9 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media screen and (max-width:768px) {
+  .trending__products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
