@@ -24,6 +24,7 @@
 
 /* =================Timer============== */
 .timer {
+  position: relative;
   background: var(--color-primary);
   color: var(--color-white);
   padding: 3rem 0;
@@ -46,6 +47,7 @@
   background: var(--color-white);
   color: var(--color-primary);
   font-weight: bold;
+  cursor: pointer;
 }
 
 .timer-right {
@@ -57,5 +59,7 @@
 .timer-right img {
   width: 70%;
 }
+
+
 
 /* ================= EndTimer============== */

@@ -1,0 +1,72 @@
+.clock {
+  display: flex;
+}
+
+.clock__data-timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .2rem;
+}
+
+.clock__data {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+/* ribon */
+.ribbon {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  text-align: right;
+}
+
+.ribbon span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 120px;
+  display: block;
+  background: white;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px;
+  right: -21px;
+}
+
+.ribbon span::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid #A7A7A7;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #A7A7A7;
+}
+
+.ribbon span::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #A7A7A7;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #A7A7A7;
+}

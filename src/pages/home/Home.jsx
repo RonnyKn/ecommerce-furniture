@@ -45,6 +45,9 @@ const Home = () => {
       </section>
 
       <section className="timer">
+        <div className="ribbon">
+          <span>Disc 80%</span>
+        </div>
         <div className="container timer-container">
           <div className="timer-left">
             <p>Limited Offers</p>
