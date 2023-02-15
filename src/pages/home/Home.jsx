@@ -12,6 +12,7 @@ const Home = () => {
   const [dataTrending, setDataTrending] = useState([])
   const [dataSales, setDataSales] = useState([])
   const [dataNewArrival, setDataNewArrival] = useState([])
+  const [dataPopular, setDataPopular] = useState([])
 
   useEffect(() => {
     const TrendingProducts = products.filter(
@@ -20,13 +21,18 @@ const Home = () => {
     const SalesProducts = products.filter(
       (product) => product.category === "sofa"
     )
+    const PopularProducts = products.filter(
+      (product) => product.category === "watch"
+    )
     const NewArrival = products.filter(
       (product) =>
         product.category === "mobile" || product.category === "wireless"
     )
+
     setDataTrending(TrendingProducts)
     setDataSales(SalesProducts)
     setDataNewArrival(NewArrival)
+    setDataPopular(PopularProducts)
   }, [])
 
   return (
@@ -47,7 +53,7 @@ const Home = () => {
       </section>
 
       {/* BEST SALES PRODUCT */}
-      <section className="trending__products">
+      <section className="sales__products">
         <h3 className="section-title">Best Sales Product</h3>
         <TrendingProducts filteredProducts={dataSales} />
       </section>
@@ -74,6 +80,11 @@ const Home = () => {
       <section className="new__arrival">
         <h3 className="section-title">New Arrival</h3>
         <TrendingProducts filteredProducts={dataNewArrival} />
+      </section>
+
+      <section className="popular__products">
+        <h3 className="section-title">Popular in Category</h3>
+        <TrendingProducts filteredProducts={dataPopular} />
       </section>
     </section>
   )
