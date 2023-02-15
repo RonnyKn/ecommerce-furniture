@@ -11,6 +11,7 @@ import Hero from "../../components/hero/Hero"
 const Home = () => {
   const [dataTrending, setDataTrending] = useState([])
   const [dataSales, setDataSales] = useState([])
+  const [dataNewArrival, setDataNewArrival] = useState([])
 
   useEffect(() => {
     const TrendingProducts = products.filter(
@@ -19,8 +20,13 @@ const Home = () => {
     const SalesProducts = products.filter(
       (product) => product.category === "sofa"
     )
+    const NewArrival = products.filter(
+      (product) =>
+        product.category === "mobile" || product.category === "wireless"
+    )
     setDataTrending(TrendingProducts)
     setDataSales(SalesProducts)
+    setDataNewArrival(NewArrival)
   }, [])
 
   return (
@@ -36,12 +42,14 @@ const Home = () => {
 
       {/* TRENDING PRODUCTS */}
       <section className="trending__products">
+        <h3 className="section-title">Trending Product</h3>
         <TrendingProducts filteredProducts={dataTrending} />
       </section>
 
       {/* BEST SALES PRODUCT */}
       <section className="trending__products">
-        <TrendingProducts filteredProducts={dataSales} title={true} />
+        <h3 className="section-title">Best Sales Product</h3>
+        <TrendingProducts filteredProducts={dataSales} />
       </section>
 
       <section className="timer">
@@ -61,6 +69,11 @@ const Home = () => {
             <img src={timerImg} alt={`${timerImg}.png`} />
           </div>
         </div>
+      </section>
+
+      <section className="new__arrival">
+        <h3 className="section-title">New Arrival</h3>
+        <TrendingProducts filteredProducts={dataNewArrival} />
       </section>
     </section>
   )

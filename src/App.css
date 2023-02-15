@@ -79,3 +79,9 @@ img {
 section {
   padding: 5rem 0;
 }
+
+.section-title {
+  margin: 0 auto;
+  width: var(--container-width-lg);
+  text-align: center;
+}
