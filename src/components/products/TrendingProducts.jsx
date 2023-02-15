@@ -6,7 +6,7 @@ import { BsFillPlusCircleFill } from "react-icons/bs"
 
 const TrendingProducts = ({ filteredProducts, title }) => {
   return (
-    <section className="trending__products">
+    <>
       {title === true ? (
         <h3 className="trending__products-title">Best Sales Product</h3>
       ) : (
@@ -37,7 +37,7 @@ const TrendingProducts = ({ filteredProducts, title }) => {
           </div>
         ))}
       </div>
-    </section>
+    </>
   )
 }
 
