@@ -20,7 +20,7 @@ const ProductCard = ({
         image: imgUrl,
       })
     )
-    toast.success("product added to cart!")
+    toast.success(`${productName} added to cart!`)
   }
 
   return (
@@ -40,7 +40,11 @@ const ProductCard = ({
         <p>
           <strong> $ {price}</strong>
         </p>
-        <motion.button whileHover={{ scale: 1.1 }} onClick={addToCart}>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={addToCart}
+        >
           <BsFillPlusCircleFill size="1.8em" />
         </motion.button>
       </div>
