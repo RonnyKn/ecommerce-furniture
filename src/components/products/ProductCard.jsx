@@ -3,8 +3,7 @@ import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import { BsFillPlusCircleFill } from "react-icons/bs"
 import { useDispatch } from "react-redux"
-import { cartActions } from "../../redux/slice/cartSlice"
-import { toast } from "react-toastify"
+import { setAddItems } from "../../redux/slice/cartSlice"
 
 const ProductCard = ({
   item: { id, imgUrl, productName, price, category },
@@ -12,15 +11,13 @@ const ProductCard = ({
   const dispatch = useDispatch()
 
   const addToCart = () => {
-    dispatch(
-      cartActions.addItem({
-        id: id,
-        productName: productName,
-        price: price,
-        image: imgUrl,
-      })
-    )
-    toast.success(`${productName} added to cart!`)
+    const item = {
+      id,
+      productName,
+      price,
+      imgUrl,
+    }
+    dispatch(setAddItems(item))
   }
 
   return (

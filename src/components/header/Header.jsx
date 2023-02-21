@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom"
 import { SlHandbag } from "react-icons/sl"
 import userIcon from "../../assets/images/user-icon.png"
 import { useSelector } from "react-redux"
+import { selectTotalQty } from "../../redux/slice/cartSlice"
 
 const Header = () => {
   const navigations = [
@@ -17,7 +18,7 @@ const Header = () => {
       to: "/shop",
     },
   ]
-  const totalQty = useSelector((state) => state.cart.totalQty)
+  const totalQty = useSelector(selectTotalQty)
 
   return (
     <header className="header">
