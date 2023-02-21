@@ -80,6 +80,10 @@ section {
   padding: 5rem 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .section-title {
   margin: 0 auto;
   width: var(--container-width-lg);

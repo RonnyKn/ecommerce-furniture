@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { BsFillPlusCircleFill } from "react-icons/bs"
 import { useDispatch } from "react-redux"
 import { cartActions } from "../../redux/slice/cartSlice"
+import { toast } from "react-toastify"
 
 const ProductCard = ({
   item: { id, imgUrl, productName, price, category },
@@ -19,7 +20,7 @@ const ProductCard = ({
         image: imgUrl,
       })
     )
-    alert("product added to cart")
+    toast.success("product added to cart!")
   }
 
   return (
@@ -39,9 +40,9 @@ const ProductCard = ({
         <p>
           <strong> $ {price}</strong>
         </p>
-        <button onClick={addToCart}>
+        <motion.button whileHover={{ scale: 1.1 }} onClick={addToCart}>
           <BsFillPlusCircleFill size="1.8em" />
-        </button>
+        </motion.button>
       </div>
     </div>
   )
