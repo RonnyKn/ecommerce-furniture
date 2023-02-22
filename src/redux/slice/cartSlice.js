@@ -32,9 +32,6 @@ const cartSlice = createSlice({
         toast.success(`${newItem.productName} added to cart!`)
       }
       localStorage.setItem("cart", JSON.stringify(state.cartItems))
-      console.log(state.totalQty)
-      console.log(state.cartItems)
-      console.log(newItem)
     },
   },
 })

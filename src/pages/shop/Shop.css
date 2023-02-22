@@ -1,0 +1,9 @@
+.shop__hero {
+  background: linear-gradient(rgba(0, 0, 0, .562), rgba(0, 0, 0, .562)), url('../../assets/images/shop-hero.jpg') no-repeat center;
+  background-size: cover;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+}

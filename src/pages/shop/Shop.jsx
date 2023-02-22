@@ -2,7 +2,13 @@ import "./Shop.css"
 import React from "react"
 
 const Shop = () => {
-  return <section>Shop</section>
+  return (
+    <section className="shop">
+      <section className="shop__hero">
+        <h1>Products</h1>
+      </section>
+    </section>
+  )
 }
 
 export default Shop
