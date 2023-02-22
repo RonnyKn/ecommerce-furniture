@@ -7,3 +7,44 @@
   align-items: center;
   color: var(--color-white);
 }
+
+.shop__filter-container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.filter-widget {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.search-box input {
+  width: 100%;
+  padding: .5rem;
+  border-radius: .4rem;
+  border: 2px solid black;
+}
+
+.filter-widget select {
+  padding: 0 .5rem;
+  border-radius: .4rem;
+  outline: auto;
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.search-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.search-box button {
+  padding: .3rem .3rem .1rem;
+  background: var(--color-primary);
+  border-radius: .5rem;
+  color: var(--color-white);
+}
