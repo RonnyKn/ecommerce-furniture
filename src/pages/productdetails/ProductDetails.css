@@ -1,0 +1,42 @@
+.product__details-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1rem;
+}
+
+.product__details-ratings {
+  color: grey;
+}
+
+.product__details-ratings span {
+  color: salmon !important;
+  font-weight: bold;
+}
+
+.product__details-price {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.product__details-price h5 {
+  font-size: 1.2rem;
+}
+
+.product__details-price span {
+  color: salmon;
+  font-weight: bold;
+}
+
+.product__details-right button {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__details-description {
+  font-size: .8rem;
+  text-align: justify;
+}

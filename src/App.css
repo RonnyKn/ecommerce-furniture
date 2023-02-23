@@ -80,8 +80,12 @@ section {
   padding: 5rem 0;
 }
 
-button {
+.btn {
   cursor: pointer;
+  padding: .5rem 1rem;
+  background: var(--color-primary);
+  border-radius: .3rem;
+  color: var(--color-white);
 }
 
 .section-title {

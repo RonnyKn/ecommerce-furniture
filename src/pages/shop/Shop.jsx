@@ -30,6 +30,19 @@ const Shop = () => {
     return setDataProducts(filteredProduct)
   }
 
+  const handleSort = (e) => {
+    const sortValue = e.target.value
+
+    if (sortValue === "ascending") {
+      const sortProducts = products.sort()
+      return setDataProducts(sortProducts)
+    }
+
+    // if (sortValue === "descending") {
+    //   const sortProducts = products.reverse().sort()
+    //   return setDataProducts(sortProducts)
+    // }
+  }
   return (
     <section className="shop">
       <section className="shop__hero">
@@ -48,7 +61,7 @@ const Shop = () => {
               <option value="wireless">Wireless</option>
             </select>
 
-            <select onChange={handleFilter}>
+            <select onChange={handleSort}>
               <option>Sort By </option>
               <option value="ascending">Ascending</option>
               <option value="descending">Descending</option>

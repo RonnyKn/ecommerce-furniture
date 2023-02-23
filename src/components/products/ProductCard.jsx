@@ -22,7 +22,7 @@ const ProductCard = ({
 
   return (
     <div className="trending">
-      <Link to="shop:id">
+      <Link to={`shop/${id}`}>
         <motion.img
           whileHover={{ scale: 0.9 }}
           src={imgUrl}
@@ -30,7 +30,7 @@ const ProductCard = ({
         />
       </Link>
       <h5>
-        <Link to={`shop:id/${id}`}>{productName}</Link>
+        <Link to={`shop/${id}`}>~{productName}~</Link>
       </h5>
       <p className="trending-category">{category}</p>
       <div className="trending-cart">

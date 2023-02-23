@@ -12,10 +12,6 @@
 
 .hero-left button {
   margin-top: 1rem;
-  padding: .5rem 1rem;
-  background: var(--color-primary);
-  border-radius: .3rem;
-  color: var(--color-white);
 }
 
 .hero-left h1 {

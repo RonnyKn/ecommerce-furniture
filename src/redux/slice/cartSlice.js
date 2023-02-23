@@ -18,7 +18,7 @@ const cartSlice = createSlice({
       const newItem = action.payload
       const existItem = state.cartItems.findIndex(
         (item) => item.id === newItem.id
-      )
+      ) //return an index
       //temporary
       state.totalQty++
       if (existItem >= 0) {

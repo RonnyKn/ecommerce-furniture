@@ -14,7 +14,11 @@ const Hero = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat a aut
           iure rem, aspernatur esse!
         </p>
-        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 1.2 }}
+          className="btn"
+        >
           <Link to="shop">SHOP NOW!</Link>
         </motion.button>
       </div>
