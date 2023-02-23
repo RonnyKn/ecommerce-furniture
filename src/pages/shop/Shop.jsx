@@ -1,7 +1,7 @@
 import "./Shop.css"
 import React, { useEffect, useState } from "react"
-import { BiSearch } from "react-icons/bi"
-import { motion } from "framer-motion"
+// import { BiSearch } from "react-icons/bi"
+// import { motion } from "framer-motion"
 import TrendingProducts from "../../components/products/TrendingProducts"
 import products from "../../assets/data/products"
 
@@ -20,7 +20,15 @@ const Shop = () => {
       return setDataProducts(filteredProduct)
     }
   }
-  // useEffect(() => {}, [])
+
+  const handleSearch = (e) => {
+    const searchValue = e.target.value
+
+    const filteredProduct = products.filter((item) =>
+      item.productName.toLowerCase().includes(searchValue.toLowerCase())
+    )
+    return setDataProducts(filteredProduct)
+  }
 
   return (
     <section className="shop">
@@ -48,20 +56,23 @@ const Shop = () => {
           </div>
 
           <div className="search-box">
-            <input type="text" placeholder="Search.." />
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <BiSearch size="2em" />
-            </motion.button>
+            <input
+              type="search"
+              placeholder="Search.."
+              onChange={handleSearch}
+            />
+            {/* <span>
+              <BiSearch size="1em" />
+            </span> */}
           </div>
         </div>
-        {/* {dataProducts.length === 0 ? (
-          <h1>Data not Found!</h1>
+        {dataProducts.length === 0 ? (
+          <h3 style={{ textAlign: "center", marginTop: "5rem" }}>
+            Data not Found!
+          </h3>
         ) : (
-          )} */}
-        <TrendingProducts filteredProducts={dataProducts} />
+          <TrendingProducts filteredProducts={dataProducts} />
+        )}
       </section>
     </section>
   )

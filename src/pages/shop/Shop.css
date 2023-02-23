@@ -42,7 +42,8 @@
   gap: .5rem;
 }
 
-.search-box button {
+.search-box span {
+  display: inline-block;
   padding: .3rem .3rem .1rem;
   background: var(--color-primary);
   border-radius: .5rem;
