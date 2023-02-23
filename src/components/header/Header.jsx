@@ -29,7 +29,7 @@ const Header = () => {
         <div className="header-nav">
           <ul>
             {navigations.map((val, idx) => (
-              <li key={idx}>
+              <motion.li key={idx} whileHover={{ scale: 1.2 }}>
                 <NavLink
                   to={val?.to}
                   className={(navClass) =>
@@ -38,7 +38,7 @@ const Header = () => {
                 >
                   {val?.navbar}
                 </NavLink>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>

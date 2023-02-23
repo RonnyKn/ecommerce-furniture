@@ -1,5 +1,5 @@
 import React from "react"
-import { Route, Routes, useParams } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import Cart from "../pages/cart/Cart"
 import Checkout from "../pages/checkout/Checkout"
 import Home from "../pages/home/Home"
