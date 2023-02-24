@@ -106,3 +106,16 @@
 .reviews-text {
   color: grey;
 }
+
+/* ===========MEDIA QUERIES========= */
+@media screen and (max-width:768px) {
+  .product__details-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .product__details-hero h1 {
+    font-size: 1.3rem;
+  }
+}
