@@ -65,6 +65,10 @@
   padding: .5rem 1rem;
 }
 
+.content-description {
+  text-align: justify;
+}
+
 .content-reviews {
   display: flex;
   align-items: center;

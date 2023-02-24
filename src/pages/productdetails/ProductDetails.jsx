@@ -84,14 +84,18 @@ const ProductDetails = () => {
           </span>
         </div>
         <div className="tab-content">
-          {tab === "desc" && <p>{description}</p>}
+          {tab === "desc" && (
+            <p className="content-description">{description}</p>
+          )}
           {tab === "rev" &&
             reviews.map((review, idx) => (
               <div className="content-reviews" key={idx}>
                 <img src={userIcon} alt={`userIcon.png`} />
                 <div>
                   <div>
-                    <span>Anonymous</span>
+                    <span>
+                      <strong>Anonymous</strong>
+                    </span>
                     <p className="reviews-rating">
                       ( <span>{review.rating}</span> ratings )
                     </p>
