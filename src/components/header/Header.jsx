@@ -1,7 +1,7 @@
 import "./Header.css"
 import React from "react"
 import { motion } from "framer-motion"
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { SlHandbag } from "react-icons/sl"
 import userIcon from "../../assets/images/user-icon.png"
 import { useSelector } from "react-redux"
@@ -27,8 +27,11 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container header-container">
-        <div className="header-logo">
-          <h5>Rons Furniture</h5>
+        <div className="header-logo" onClick={scrollTop}>
+          <Link to="/">
+            <span className="title1"> Rons </span>
+            <strong className="title2"> SHOP</strong>
+          </Link>
         </div>
         <div className="header-nav">
           <ul>
@@ -44,7 +47,7 @@ const Header = () => {
                     navClass.isActive ? "nav-active" : null
                   }
                 >
-                  {val?.navbar}
+                  <strong>{val?.navbar}</strong>
                 </NavLink>
               </motion.li>
             ))}

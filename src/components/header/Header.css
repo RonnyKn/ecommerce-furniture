@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik+Puddles&display=swap');
+
 .header {
   position: fixed;
   width: 100%;
@@ -13,6 +15,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.title1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+}
+
+.title2 {
+  font-family: 'Rubik Puddles', cursive;
+  font-size: 1.8rem;
 }
 
 .header-nav ul {
