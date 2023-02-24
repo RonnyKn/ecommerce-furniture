@@ -1,5 +1,5 @@
 import "./Shop.css"
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 // import { BiSearch } from "react-icons/bi"
 // import { motion } from "framer-motion"
 import TrendingProducts from "../../components/products/TrendingProducts"
