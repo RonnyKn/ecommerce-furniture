@@ -55,7 +55,6 @@ const Header = () => {
             <SlHandbag size="1.8em" />
             <span>{totalQty}</span>
           </div>
-
           <motion.img
             whileTap={{ scale: 1.2 }}
             src={userIcon}
