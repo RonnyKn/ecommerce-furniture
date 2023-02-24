@@ -86,6 +86,7 @@ section {
   background: var(--color-primary);
   border-radius: .3rem;
   color: var(--color-white);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, .4);
 }
 
 .section-title {
