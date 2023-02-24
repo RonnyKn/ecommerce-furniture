@@ -27,12 +27,16 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container header-container">
-        <div className="header-logo" onClick={scrollTop}>
+        <motion.div
+          className="header-logo"
+          onClick={scrollTop}
+          whileHover={{ scale: 1.2 }}
+        >
           <Link to="/">
             <span className="title1"> Rons </span>
             <strong className="title2"> SHOP</strong>
           </Link>
-        </div>
+        </motion.div>
         <div className="header-nav">
           <ul>
             {navigations.map((val, idx) => (
