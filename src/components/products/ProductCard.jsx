@@ -20,9 +20,14 @@ const ProductCard = ({
     }
     dispatch(setAddItems(item))
   }
+
+  const scrollTop = () => {
+    window.scroll(0, 0)
+  }
+
   return (
     <div className="trending">
-      <Link to={`${pages === "shop" ? "" : "shop/"}${id}`}>
+      <Link to={`${pages === "shop" ? "" : "shop/"}${id}`} onClick={scrollTop}>
         <motion.img
           whileHover={{ scale: 0.9 }}
           src={imgUrl}
@@ -30,7 +35,10 @@ const ProductCard = ({
         />
       </Link>
       <h5>
-        <Link to={`${pages === "shop" ? "" : "shop/"}${id}`}>
+        <Link
+          to={`${pages === "shop" ? "" : "shop/"}${id}`}
+          onClick={scrollTop}
+        >
           ~{productName}~
         </Link>
       </h5>
