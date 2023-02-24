@@ -20,6 +20,10 @@ const Header = () => {
   ]
   const totalQty = useSelector(selectTotalQty)
 
+  const scrollTop = () => {
+    window.scroll(0, 0)
+  }
+
   return (
     <header className="header">
       <div className="container header-container">
@@ -29,7 +33,11 @@ const Header = () => {
         <div className="header-nav">
           <ul>
             {navigations.map((val, idx) => (
-              <motion.li key={idx} whileHover={{ scale: 1.2 }}>
+              <motion.li
+                key={idx}
+                whileHover={{ scale: 1.2 }}
+                onClick={scrollTop}
+              >
                 <NavLink
                   to={val?.to}
                   className={(navClass) =>
