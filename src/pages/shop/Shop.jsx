@@ -84,7 +84,7 @@ const Shop = () => {
             Data not Found!
           </h3>
         ) : (
-          <TrendingProducts filteredProducts={dataProducts} />
+          <TrendingProducts filteredProducts={dataProducts} pages="shop" />
         )}
       </section>
     </section>

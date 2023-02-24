@@ -7,6 +7,7 @@ import { setAddItems } from "../../redux/slice/cartSlice"
 
 const ProductCard = ({
   item: { id, imgUrl, productName, price, category },
+  pages,
 }) => {
   const dispatch = useDispatch()
 
@@ -19,10 +20,9 @@ const ProductCard = ({
     }
     dispatch(setAddItems(item))
   }
-
   return (
     <div className="trending">
-      <Link to={`shop/${id}`}>
+      <Link to={`${pages === "shop" ? "" : "shop/"}${id}`}>
         <motion.img
           whileHover={{ scale: 0.9 }}
           src={imgUrl}
@@ -30,7 +30,9 @@ const ProductCard = ({
         />
       </Link>
       <h5>
-        <Link to={`shop/${id}`}>~{productName}~</Link>
+        <Link to={`${pages === "shop" ? "" : "shop/"}${id}`}>
+          ~{productName}~
+        </Link>
       </h5>
       <p className="trending-category">{category}</p>
       <div className="trending-cart">
