@@ -1,13 +1,24 @@
-import React from "react"
-import { selectCartItems } from "../../redux/slice/cartSlice"
+import React, { useEffect } from "react"
+import {
+  selectCartItems,
+  selectTotalAmount,
+  setGetTotal,
+} from "../../redux/slice/cartSlice"
 import "./Cart.css"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import CartCount from "../../components/cart/CartCount"
 import CartItems from "../../components/cart/CartItems"
 import CartEmpty from "../../components/cart/CartEmpty"
 
 const Cart = () => {
+  const dispatch = useDispatch()
   const dataCartItems = useSelector(selectCartItems)
+  const dataSubtotal = useSelector(selectTotalAmount)
+
+  useEffect(() => {
+    dispatch(setGetTotal())
+  }, [dataCartItems, dispatch])
+
   return (
     <section className="cart">
       <div className="container cart-container">
@@ -23,6 +34,12 @@ const Cart = () => {
               <CartItems cartItems={dataCartItems} />
             </div>
           )}
+        </div>
+
+        <div className="subtotal">
+          <h3>
+            SUBTOTAL : $<span>{dataSubtotal}</span>
+          </h3>
         </div>
       </div>
     </section>
