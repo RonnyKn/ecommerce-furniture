@@ -21,3 +21,14 @@ table {
   padding: .3rem;
   margin: 0 auto;
 }
+
+.cart-items-price span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.cart-items-delete {
+  cursor: pointer;
+}

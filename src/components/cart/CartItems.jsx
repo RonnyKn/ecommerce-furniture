@@ -1,10 +1,15 @@
 import React from "react"
 import { useDispatch } from "react-redux"
-import { setRemoveItem } from "../../redux/slice/cartSlice"
+import {
+  setDecreaseQty,
+  setIncreaseQty,
+  setRemoveItem,
+} from "../../redux/slice/cartSlice"
+import { AiTwotoneDelete, AiFillMinusCircle } from "react-icons/ai"
+import { BsFillPlusCircleFill } from "react-icons/bs"
 
 const CartItems = ({ cartItems }) => {
   const dispatch = useDispatch()
-
   return (
     <div className="cart-items">
       <table>
@@ -15,7 +20,7 @@ const CartItems = ({ cartItems }) => {
             <th>Product Name</th>
             <th>Price</th>
             <th>Quantity</th>
-            <th>Action</th>
+            <th>Delete</th>
           </tr>
         </thead>
 
@@ -25,6 +30,13 @@ const CartItems = ({ cartItems }) => {
             const onRemoveItem = () => {
               dispatch(setRemoveItem({ ...item }))
             }
+            const onIncreaseQty = () => {
+              dispatch(setIncreaseQty({ ...item }))
+            }
+            const onDecreaseQty = () => {
+              dispatch(setDecreaseQty({ ...item }))
+            }
+
             return (
               <tr
                 key={idx}
@@ -35,10 +47,28 @@ const CartItems = ({ cartItems }) => {
                   <img src={imgUrl} alt={`${item?.productName}.png`} />
                 </td>
                 <td>{productName}</td>
-                <td>$ {price * Quantity}</td>
+                <td className="cart-items-price">
+                  <span>
+                    <button
+                      type="button"
+                      onClick={onDecreaseQty}
+                      style={{
+                        visibility: `${Quantity === 1 ? "hidden" : ""}`,
+                      }}
+                    >
+                      <AiFillMinusCircle size="2.1em" />
+                    </button>
+                    $ {price * Quantity}
+                    <button type="button" onClick={onIncreaseQty}>
+                      <BsFillPlusCircleFill size="1.8em" />
+                    </button>
+                  </span>
+                </td>
                 <td>{Quantity}</td>
                 <td>
-                  <button onClick={onRemoveItem}>delete</button>
+                  <button onClick={onRemoveItem} className="cart-items-delete">
+                    <AiTwotoneDelete size="1.8em" />
+                  </button>
                 </td>
               </tr>
             )
