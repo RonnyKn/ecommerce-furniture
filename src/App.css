@@ -80,6 +80,10 @@ section {
   padding: 5rem 0;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn {
   cursor: pointer;
   padding: .5rem 1rem;
