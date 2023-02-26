@@ -33,8 +33,8 @@ const Header = () => {
           whileHover={{ scale: 1.2 }}
         >
           <Link to="/">
-            <span className="title1"> Rons </span>
-            <strong className="title2"> SHOP</strong>
+            <span className="title1">Ron</span>
+            <strong className="title2">SHOP</strong>
           </Link>
         </motion.div>
         <div className="header-nav">
