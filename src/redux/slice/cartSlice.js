@@ -33,10 +33,19 @@ const cartSlice = createSlice({
       }
       localStorage.setItem("cart", JSON.stringify(state.cartItems))
     },
+    setRemoveItem: (state, action) => {
+      const newItem = action.payload
+      const removeItem = state.cartItems.filter(
+        (item) => newItem.id !== item.id
+      )
+      state.cartItems = removeItem
+      localStorage.setItem("cart", JSON.stringify(state.cartItems))
+      toast.success(`${newItem.productName} removed from cart!`)
+    },
   },
 })
 
-export const { setAddItems } = cartSlice.actions
+export const { setAddItems, setRemoveItem } = cartSlice.actions
 
 export const selectCartItems = (state) => state.cart.cartItems
 
