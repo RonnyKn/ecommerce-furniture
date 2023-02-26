@@ -6,6 +6,7 @@ import { SlHandbag } from "react-icons/sl"
 import userIcon from "../../assets/images/user-icon.png"
 import { useSelector } from "react-redux"
 import { selectTotalQty } from "../../redux/slice/cartSlice"
+import { toast } from "react-toastify"
 
 const Header = () => {
   const navigations = [
@@ -58,16 +59,22 @@ const Header = () => {
           </ul>
         </div>
         <div className="header-navicons">
-          <div className="header-cart">
+          <motion.div
+            className="header-cart"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
+          >
             <Link to="/cart">
               <SlHandbag size="1.8em" />
               <span>{totalQty}</span>
             </Link>
-          </div>
+          </motion.div>
           <motion.img
-            whileTap={{ scale: 1.2 }}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.9 }}
             src={userIcon}
             alt={`userIcon.png`}
+            onClick={() => toast.error("Available soon")}
           />
         </div>
       </div>

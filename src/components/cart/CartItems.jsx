@@ -7,6 +7,7 @@ import {
 } from "../../redux/slice/cartSlice"
 import { AiTwotoneDelete, AiFillMinusCircle } from "react-icons/ai"
 import { BsFillPlusCircleFill } from "react-icons/bs"
+import { motion } from "framer-motion"
 
 const CartItems = ({ cartItems }) => {
   const dispatch = useDispatch()
@@ -49,26 +50,38 @@ const CartItems = ({ cartItems }) => {
                 <td>{productName}</td>
                 <td className="cart-items-price">
                   <span>
-                    <button
+                    <motion.button
                       type="button"
                       onClick={onDecreaseQty}
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.9 }}
                       style={{
                         visibility: `${Quantity === 1 ? "hidden" : ""}`,
                       }}
                     >
                       <AiFillMinusCircle size="2.1em" />
-                    </button>
+                    </motion.button>
                     $ {price * Quantity}
-                    <button type="button" onClick={onIncreaseQty}>
+                    <motion.button
+                      type="button"
+                      onClick={onIncreaseQty}
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
                       <BsFillPlusCircleFill size="1.8em" />
-                    </button>
+                    </motion.button>
                   </span>
                 </td>
                 <td>{Quantity}</td>
                 <td>
-                  <button onClick={onRemoveItem} className="cart-items-delete">
+                  <motion.button
+                    onClick={onRemoveItem}
+                    className="cart-items-delete"
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
                     <AiTwotoneDelete size="1.8em" />
-                  </button>
+                  </motion.button>
                 </td>
               </tr>
             )
