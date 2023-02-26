@@ -30,16 +30,17 @@ const Cart = () => {
           {dataCartItems.length === 0 ? (
             <CartEmpty />
           ) : (
-            <div className="cartitems">
-              <CartItems cartItems={dataCartItems} />
-            </div>
+            <>
+              <div className="cartitems">
+                <CartItems cartItems={dataCartItems} />
+              </div>
+              <div className="subtotal">
+                <h3>
+                  SUBTOTAL : $<span>{dataSubtotal}</span>
+                </h3>
+              </div>
+            </>
           )}
-        </div>
-
-        <div className="subtotal">
-          <h3>
-            SUBTOTAL : $<span>{dataSubtotal}</span>
-          </h3>
         </div>
       </div>
     </section>
