@@ -1,11 +1,15 @@
 import "./Header.css"
-import React from "react"
+import React, { useEffect } from "react"
 import { motion } from "framer-motion"
 import { Link, NavLink } from "react-router-dom"
 import { SlHandbag } from "react-icons/sl"
 import userIcon from "../../assets/images/user-icon.png"
-import { useSelector } from "react-redux"
-import { selectTotalQty } from "../../redux/slice/cartSlice"
+import { useDispatch, useSelector } from "react-redux"
+import {
+  selectTotalQty,
+  setGetTotal,
+  selectCartItems,
+} from "../../redux/slice/cartSlice"
 import { toast } from "react-toastify"
 
 const Header = () => {
@@ -19,11 +23,16 @@ const Header = () => {
       to: "/shop",
     },
   ]
+  const dispatch = useDispatch()
+  const dataCartItems = useSelector(selectCartItems)
   const totalQty = useSelector(selectTotalQty)
-
   const scrollTop = () => {
     window.scroll(0, 0)
   }
+
+  useEffect(() => {
+    dispatch(setGetTotal())
+  }, [dataCartItems, dispatch])
 
   return (
     <header className="header">
@@ -66,7 +75,7 @@ const Header = () => {
           >
             <Link to="/cart">
               <SlHandbag size="1.8em" />
-              <span>{totalQty}</span>
+              {totalQty === 0 ? "" : <span>{totalQty}</span>}
             </Link>
           </motion.div>
           <motion.img
