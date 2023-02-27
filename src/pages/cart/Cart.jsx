@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import {
   selectCartItems,
   selectTotalAmount,
+  selectTotalQty,
   setGetTotal,
 } from "../../redux/slice/cartSlice"
 import "./Cart.css"
@@ -14,6 +15,7 @@ const Cart = () => {
   const dispatch = useDispatch()
   const dataCartItems = useSelector(selectCartItems)
   const dataSubtotal = useSelector(selectTotalAmount)
+  const dataQty = useSelector(selectTotalQty)
 
   useEffect(() => {
     dispatch(setGetTotal())
@@ -23,7 +25,7 @@ const Cart = () => {
     <section className="cart">
       <div className="container cart-container">
         <div className="cart-count">
-          <CartCount />
+          <CartCount dataQty={dataQty} />
         </div>
 
         <div className="cart-items">

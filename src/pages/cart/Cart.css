@@ -44,3 +44,15 @@ table {
 .subtotal h3 span {
   color: salmon;
 }
+
+/* ======Cart-Count====== */
+.cart-count {
+  width: 100%;
+  margin: .5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-count span {
+  color: salmon;
+}

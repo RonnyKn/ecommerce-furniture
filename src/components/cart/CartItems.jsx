@@ -5,8 +5,8 @@ import {
   setIncreaseQty,
   setRemoveItem,
 } from "../../redux/slice/cartSlice"
-import { AiTwotoneDelete, AiFillMinusCircle } from "react-icons/ai"
-import { BsFillPlusCircleFill } from "react-icons/bs"
+import { AiFillMinusCircle } from "react-icons/ai"
+import { BsFillPlusCircleFill, BsTrashFill } from "react-icons/bs"
 import { motion } from "framer-motion"
 
 const CartItems = ({ cartItems }) => {
@@ -80,7 +80,7 @@ const CartItems = ({ cartItems }) => {
                     whileHover={{ scale: 1.2 }}
                     whileTap={{ scale: 0.9 }}
                   >
-                    <AiTwotoneDelete size="1.8em" />
+                    <BsTrashFill size="1.8em" />
                   </motion.button>
                 </td>
               </tr>

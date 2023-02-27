@@ -19,8 +19,7 @@ const cartSlice = createSlice({
       const existItem = state.cartItems.findIndex(
         (item) => item.id === newItem.id
       ) //return an index
-      //temporary
-      // state.totalQty++
+
       if (existItem >= 0) {
         state.cartItems[existItem].Quantity += 1
         toast.success(
