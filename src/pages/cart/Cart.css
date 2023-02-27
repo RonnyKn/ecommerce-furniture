@@ -56,3 +56,9 @@ table {
 .cart-count span {
   color: salmon;
 }
+
+/* ========Cart-Empty======= */
+.cart-empty img {
+  margin: 0 auto;
+  width: 200px;
+}

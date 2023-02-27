@@ -26,9 +26,9 @@ const CartCount = ({ dataQty }) => {
         </Link>
       </motion.button>
       <h3>
-        Your Cart :{" "}
+        Your Cart :
         <em>
-          <span>{dataQty}</span> items
+          <span> {dataQty}</span> items
         </em>
       </h3>
     </div>
