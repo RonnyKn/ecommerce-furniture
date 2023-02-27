@@ -8,24 +8,26 @@ import {
 import { AiFillMinusCircle } from "react-icons/ai"
 import { BsFillPlusCircleFill, BsTrashFill } from "react-icons/bs"
 import { motion } from "framer-motion"
+import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table"
+import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css"
 
 const CartItems = ({ cartItems }) => {
   const dispatch = useDispatch()
   return (
     <div className="cart-items">
-      <table>
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>Image</th>
-            <th>Product Name</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
+      <Table>
+        <Thead>
+          <Tr>
+            <Th>No</Th>
+            <Th>Image</Th>
+            <Th>Product Name</Th>
+            <Th>Price</Th>
+            <Th>Quantity</Th>
+            <Th>Delete</Th>
+          </Tr>
+        </Thead>
 
-        <tbody>
+        <Tbody>
           {cartItems.map((item, idx) => {
             const { productName, imgUrl, price, Quantity } = item
             const onRemoveItem = () => {
@@ -39,16 +41,16 @@ const CartItems = ({ cartItems }) => {
             }
 
             return (
-              <tr
+              <Tr
                 key={idx}
                 style={{ background: `${idx % 2 === 0 ? "#e2f2b2" : ""}` }}
               >
-                <td>{idx + 1}</td>
-                <td>
+                <Td>{idx + 1}</Td>
+                <Td>
                   <img src={imgUrl} alt={`${item?.productName}.png`} />
-                </td>
-                <td>{productName}</td>
-                <td className="cart-items-price">
+                </Td>
+                <Td>{productName}</Td>
+                <Td className="cart-items-price">
                   <span>
                     <motion.button
                       type="button"
@@ -71,9 +73,9 @@ const CartItems = ({ cartItems }) => {
                       <BsFillPlusCircleFill size="1.8em" />
                     </motion.button>
                   </span>
-                </td>
-                <td>{Quantity}</td>
-                <td>
+                </Td>
+                <Td>{Quantity}</Td>
+                <Td>
                   <motion.button
                     onClick={onRemoveItem}
                     className="cart-items-delete"
@@ -82,12 +84,12 @@ const CartItems = ({ cartItems }) => {
                   >
                     <BsTrashFill size="1.8em" />
                   </motion.button>
-                </td>
-              </tr>
+                </Td>
+              </Tr>
             )
           })}
-        </tbody>
-      </table>
+        </Tbody>
+      </Table>
     </div>
   )
 }
