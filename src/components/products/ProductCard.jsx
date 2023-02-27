@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
-import { BsFillPlusCircleFill } from "react-icons/bs"
+import { BsCartPlusFill } from "react-icons/bs"
 import { useDispatch } from "react-redux"
 import { setAddItems } from "../../redux/slice/cartSlice"
 
@@ -52,7 +52,7 @@ const ProductCard = ({
           whileTap={{ scale: 0.9 }}
           onClick={addToCart}
         >
-          <BsFillPlusCircleFill size="1.8em" />
+          <BsCartPlusFill size="1.8em" />
         </motion.button>
       </div>
     </div>
