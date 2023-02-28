@@ -72,6 +72,7 @@ const Header = () => {
             className="header-cart"
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
+            onClick={scrollTop}
           >
             <Link to="/cart">
               <SlHandbag size="1.8em" />
