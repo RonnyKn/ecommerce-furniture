@@ -60,8 +60,8 @@ const Shop = () => {
 
             <select onChange={handleSort}>
               <option>Sort By </option>
-              <option value="ascending">ascending</option>
-              <option value="descending">descending</option>
+              <option value="ascending">Ascending</option>
+              <option value="descending">Descending</option>
             </select>
           </div>
 
