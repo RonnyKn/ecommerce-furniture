@@ -32,16 +32,13 @@ const Shop = () => {
 
   const handleSort = (e) => {
     const sortValue = e.target.value
-
+    const sortProducts = products.sort()
     if (sortValue === "ascending") {
-      const sortProducts = products.sort()
-      return setDataProducts(sortProducts)
+      setDataProducts(sortProducts)
     }
-
-    // if (sortValue === "descending") {
-    //   const sortProducts = products.reverse().sort()
-    //   return setDataProducts(sortProducts)
-    // }
+    if (sortValue === "descending") {
+      setDataProducts(sortProducts.reverse())
+    }
   }
   return (
     <section className="shop">
@@ -63,8 +60,8 @@ const Shop = () => {
 
             <select onChange={handleSort}>
               <option>Sort By </option>
-              <option value="ascending">Ascending</option>
-              <option value="descending">Descending</option>
+              <option value="ascending">ascending</option>
+              <option value="descending">descending</option>
             </select>
           </div>
 
