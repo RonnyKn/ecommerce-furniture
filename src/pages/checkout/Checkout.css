@@ -1,0 +1,22 @@
+.checkout-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+}
+
+.checkout-left form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-left form input,
+.checkout-left form textarea {
+  outline: auto;
+  padding: .5rem;
+}
+
+.checkout-left button {
+  margin-top: 1rem;
+  width: 100%;
+}
