@@ -55,17 +55,17 @@ const products = [
     category: "sofa",
     price: 253,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "Solid wood frame, plinth base and angled tapered legs with foam padding and leather upholstery",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Mid-Century inspiration combines with contemporary flair for a stately piece that will blend with any home decor. Generous foam cushions provide comfort, with a solid wood frame and legs for support and durability, Solid wood frame, plinth base and angled tapered legs with foam padding and leather upholstery",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.7,
@@ -78,17 +78,17 @@ const products = [
     category: "sofa",
     price: 173,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "Generous foam cushions provide comfort, with a solid wood frame and legs for support and durability",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Mid-Century inspiration combines with scandinavian touches for a stately piece that blends with any home decor. Generous foam cushions provide comfort, with a solid wood frame and legs for support and durability.",
     reviews: [
       {
         rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.7,
@@ -100,17 +100,17 @@ const products = [
     category: "sofa",
     price: 253,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "Mid-Century inspiration combines with scandinavian touches for a stately piece that blends with any home decor",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Mid-Century inspiration combines with scandinavian touches for a stately piece that blends with any home decor. Generous foam cushions provide comfort, with a solid wood frame and legs for support and durability.",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah.",
       },
     ],
     avgRating: 4.7,
@@ -122,17 +122,17 @@ const products = [
     category: "sofa",
     price: 163,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "Solid wood frame, plinth base and angled tapered legs with foam padding and fabric upholstery",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Solid wood frame, plinth base and angled tapered legs with foam padding and fabric upholstery.Mid-Century inspiration combines with scandinavian touches for a stately piece that blends with any home decor. Generous foam cushions provide comfort, with a solid wood frame and legs for support and durability.",
     reviews: [
       {
         rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah.",
       },
     ],
     avgRating: 4.7,
@@ -145,17 +145,17 @@ const products = [
     category: "sofa",
     price: 163,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "This slipcover shields and protects your furniture from spills, stains, wear and tear to prevent it from getting ruined",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "This slipcover shields and protects your furniture from spills, stains, wear and tear to prevent it from getting ruined. Its great for homes with children and pets, or for anyone seeking an economical solution for furniture protection.",
     reviews: [
       {
         rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah.",
       },
     ],
     avgRating: 4.7,
@@ -168,17 +168,17 @@ const products = [
     category: "sofa",
     price: 163,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "Slipcovers are one-size-fits-most. This 1-Piece Chair Slipcover fits most standard Arm Chairs up to 40 inches wide",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Slipcovers are one-size-fits-most. This 1-Piece Chair Slipcover fits most standard Arm Chairs up to 40 inches wide.Lightweight, Comfortable and Easy Care: Available in a variety of solid colors that will freshen up any home decor! Machine Washable: Durable, high-quality material designed for long lasting use and enjoyment",
     reviews: [
       {
         rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah.",
       },
     ],
     avgRating: 4.7,
@@ -189,18 +189,17 @@ const products = [
     imgUrl: productImg07,
     category: "chair",
     price: 99,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    shortDesc: "This chair is so comfortable, itll feel like a hug",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      " This chair is so comfortable, itll feel like a hug. Its made with our Dream Coil Component for maximum comfort and durability. Quality fabric and cozy cushions rest upon a solid hardwood frame and elegant, sturdy legs.",
     reviews: [
       {
         rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah.",
       },
     ],
     avgRating: 4.7,
@@ -212,18 +211,17 @@ const products = [
     imgUrl: productImg007,
     category: "sofa",
     price: 173,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    shortDesc: " Upholstered in premium, easy to care for fabric",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
     reviews: [
       {
         rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah.",
       },
     ],
     avgRating: 4.7,
@@ -236,17 +234,17 @@ const products = [
     category: "chair",
     price: 89,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      " Its great for homes with children and pets, or for anyone seeking an economical solution for furniture protection.",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "This slipcover shields and protects your furniture from spills, stains, wear and tear to prevent it from getting ruined. Its great for homes with children and pets, or for anyone seeking an economical solution for furniture protection.",
     reviews: [
       {
         rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah.",
       },
     ],
     avgRating: 4.7,
@@ -259,17 +257,17 @@ const products = [
     category: "chair",
     price: 112,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "This chair for small spaces is the perfect way to tie your room together.",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "When you craft your perfect room, you should never have to sacrifice style for comfort. With our furniture, you get the best of both worlds. This chair for small spaces is the perfect way to tie your room together.",
     reviews: [
       {
         rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah.",
       },
     ],
     avgRating: 4.7,
@@ -282,17 +280,17 @@ const products = [
     category: "mobile",
     price: 799,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "A like-new experience. Backed by a one-year satisfaction guarantee",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Tested for battery health and guaranteed to come with a battery that exceeds 90% of original capacity Inspected and guaranteed to have minimal cosmetic damage, which is not noticeable when the device is held at arm's length. Successfully passed a full diagnostic test which ensures like-new functionality and removal of any prior-user personal information.",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
@@ -303,18 +301,17 @@ const products = [
     imgUrl: productImg10,
     category: "chair",
     price: 99,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    shortDesc: "The perfect seating solution for any room of your home!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      " The perfect seating solution for any room of your home, our stylish built to last Swoop Arm Accent Chair seamlessly compliments any existing living room furniture or even bedroom furniture!",
     reviews: [
       {
         rating: 4.6,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.7,
@@ -326,17 +323,17 @@ const products = [
     category: "mobile",
     price: 799,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "Successfully passed a full diagnostic test which ensures like-new functionality and removal of any prior-user personal information.",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Inspected and guaranteed to have minimal cosmetic damage, which is not noticeable when the device is held at arm's length. Successfully passed a full diagnostic test which ensures like-new functionality and removal of any prior-user personal information",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
@@ -349,17 +346,17 @@ const products = [
     category: "mobile",
     price: 599,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "Octa-core, up to 2.2 GHz GPU ARM Mali-G57 / 18 W fast charging connector 5000mAh high-capacity battery",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Octa-core, up to 2.2 GHz GPU ARM Mali-G57 / 18 W fast charging connector 5000mAh high-capacity battery. 6.5 inch full screen display High refresh rate of 90 Hz Resolution: 1080 × 2400 FHD .48MP Triple camera with night photo mode + 16Mp front Camera",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
@@ -372,17 +369,17 @@ const products = [
     category: "mobile",
     price: 799,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "5G Enabled - The OnePlus Nord N20 is the perfect entry-level 5G phone, featuring premium specs and an affordable price!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "5G Enabled - The OnePlus Nord N20 is the perfect entry-level 5G phone, featuring premium specs and an affordable price. *5G compatible with T-mobile, Google Fi, Mint Mobile, Metro by TMO, Simple Mobile. 5G available in selected areas, please check with your carrier!",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
@@ -395,17 +392,17 @@ const products = [
     category: "mobile",
     price: 899,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "Backed by the same one-year satisfaction guarantee as brand new Apple products.!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Includes a brand new, generic charging cable that is certified Mfi (Made for iPhone) and a brand new, generic wall plug that is UL certified for performance and safety. Also includes a SIM tray removal tool but does not come with headphones or a SIM card.",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
@@ -418,17 +415,17 @@ const products = [
     category: "mobile",
     price: 699,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "Purchase the new Samsung Galaxy S23 Ultra now and get a $100 Amazon gift card!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Capture incredibly smooth video during life’s most exciting moments; With Video Stabilization, this smartphone easily records daytime outdoor adventures or those spur-of-the-moment dance parties at night!",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
@@ -441,17 +438,17 @@ const products = [
     category: "watch",
     price: 299,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "This classic luxury fashion style watch will be perfect for almost any occasion, outdoors, parties and business meetings.!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "This classic luxury fashion style watch will be perfect for almost any occasion, outdoors, parties and business meetings. Classic vintage design with enlarged date window at 3 o'clock for easy reading. Unidirectional rotating scale bezel with large luminescent hour markers.!",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
@@ -464,17 +461,17 @@ const products = [
     category: "watch",
     price: 299,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "White easy-to-read dial with date window at 3 o'clock; Full Arabic numerals!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "White easy-to-read dial with date window at 3 o'clock; Full Arabic numerals. White easy-to-read dial with date window at 3 o'clock; Full Arabic numerals!",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
@@ -487,17 +484,17 @@ const products = [
     category: "watch",
     price: 299,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "Classic vintage design with enlarged date window at 3 o'clock for easy reading. Unidirectional rotating scale bezel with large luminescent hour markers!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "This classic luxury fashion style watch will be perfect for almost any occasion, outdoors, parties and business meetings. Classic vintage design with enlarged date window at 3 o'clock for easy reading. Unidirectional rotating scale bezel with large luminescent hour markers!",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
@@ -510,17 +507,17 @@ const products = [
     category: "watch",
     price: 399,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "This product is in Excellent condition The screen and body show no signs of cosmetic damage visible from 12 inches away.!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Accessories may not be original, but will be compatible and fully functional. Product may come in generic box. This product is eligible for a replacement or refund within 90-day of receipt if it does not work as expected. Refurbished phones are not guaranteed to be waterproof!",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
@@ -532,18 +529,17 @@ const products = [
     imgUrl: productImg23,
     category: "wireless",
     price: 199,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+    shortDesc: "High-performance wireless noise cancelling headphones!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "High-performance wireless noise cancelling headphones. Apple's W1 chip and industry-leading Bluetooth technology keep you connected farther with fewer drop-outs.Real-time Audio calibration preserves a Premium listening experience!",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
@@ -556,17 +552,17 @@ const products = [
     category: "wireless",
     price: 199,
     shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
+      "Pure adaptive noise canceling (pure ANC) actively blocks external noise!",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
+      "Pure adaptive noise canceling (pure ANC) actively blocks external noise. Up to 22 hours of battery life enables full-featured all-day wireless playback.With fast Fuel, a 10-minute charge gives 3 hours of play when battery is low. Rechargeable lithium ion battery!",
     reviews: [
       {
         rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Ownernya ganteng banget deh barusan kesana, barang kualitas bagus dan lumayan murah.",
       },
       {
         rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        text: "Komen dulu ah belinya nanti kapan-kapan ajah",
       },
     ],
     avgRating: 4.8,
