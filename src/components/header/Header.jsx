@@ -11,7 +11,7 @@ import {
   selectCartItems,
 } from "../../redux/slice/cartSlice"
 import { toast } from "react-toastify"
-import { GoThreeBars } from "react-icons/go"
+import { GiHamburgerMenu } from "react-icons/gi"
 import { MdOutlineClose } from "react-icons/md"
 
 const Header = () => {
@@ -25,7 +25,7 @@ const Header = () => {
       to: "/shop",
     },
   ]
-  const [isNavShow, setIsnavShow] = useState(true)
+  const [isNavShow, setIsnavShow] = useState(false)
   const dispatch = useDispatch()
   const dataCartItems = useSelector(selectCartItems)
   const totalQty = useSelector(selectTotalQty)
@@ -98,7 +98,7 @@ const Header = () => {
             {isNavShow ? (
               <MdOutlineClose size="1.8em" />
             ) : (
-              <GoThreeBars size="1.8em" />
+              <GiHamburgerMenu size="1.8em" />
             )}
           </button>
         </div>

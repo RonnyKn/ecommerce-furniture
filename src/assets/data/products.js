@@ -31,7 +31,7 @@ import productImg25 from "../images/wireless-03.png"
 const products = [
   {
     id: "01",
-    productName: "Stone and Beam Westview ",
+    productName: "Stone & Beam Westview ",
     imgUrl: productImg01,
     category: "sofa",
     price: 193,
@@ -73,7 +73,7 @@ const products = [
 
   {
     id: "03",
-    productName: "Amazon Brand Modern Sofa",
+    productName: "Amazon Brand Sofa",
     imgUrl: productImg03,
     category: "sofa",
     price: 173,
