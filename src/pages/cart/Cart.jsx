@@ -52,7 +52,7 @@ const Cart = () => {
                   >
                     <h4>Checkout Here!</h4>
                     <h3>
-                      TOTAL : $<span>{dataSubtotal}</span>
+                      TOTAL : $ <span>{dataSubtotal}</span>
                     </h3>
                   </motion.div>
                 </Link>
