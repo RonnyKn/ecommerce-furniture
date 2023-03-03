@@ -459,7 +459,7 @@ const products = [
 
   {
     id: "17",
-    productName: "Timex Easy Reader Watch",
+    productName: "Timex Reader Watch",
     imgUrl: productImg20,
     category: "watch",
     price: 299,
