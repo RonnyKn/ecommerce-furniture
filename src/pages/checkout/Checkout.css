@@ -26,11 +26,17 @@
 }
 
 /* ================checkOutItems============= */
+.checkOutItems-container {
+  height: 400px;
+  overflow: scroll;
+
+}
 
 .checkOutItems {
   display: grid;
   grid-template-columns: .5fr 1fr;
   align-items: center;
+  padding: .5rem 0;
 
 }
 
@@ -42,9 +48,23 @@
   gap: .2rem;
 }
 
+.checkOutItems-left img {
+  border-radius: 50%;
+  width: 80%;
+}
+
 .checkOutItems-right {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+/* =============MEDIA QUERIES======== */
+@media screen and (max-width:768px) {
+  .checkout-container {
+    display: flex;
+    flex-direction: column-reverse;
+
+  }
 }

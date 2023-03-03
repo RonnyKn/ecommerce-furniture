@@ -18,7 +18,7 @@ const Checkout = () => {
       <div className="container checkout-container">
         <div className="checkout-left">
           <form>
-            <p>Fill your data to proced Shipping</p>
+            <em>Fill your data to process Shipping</em>
             <label>Full Name</label>
             <input type="text" />
             <label>Address</label>
