@@ -4,16 +4,19 @@ import products from "../../assets/data/products"
 import { Link } from "react-router-dom"
 import Services from "../../components/services/Services"
 import TrendingProducts from "../../components/products/TrendingProducts"
-import timerImg from "../../assets/images/counter-timer-img.png"
+import productImg17 from "../../assets/images/phone-03.png"
 import Clock from "../../components/clock/Clock"
 import Hero from "../../components/hero/Hero"
+import { motion } from "framer-motion"
 
 const Home = () => {
   const [dataTrending, setDataTrending] = useState([])
   const [dataSales, setDataSales] = useState([])
   const [dataNewArrival, setDataNewArrival] = useState([])
   const [dataPopular, setDataPopular] = useState([])
-
+  const scrollTop = () => {
+    window.scroll(0, 0)
+  }
   useEffect(() => {
     const TrendingProducts = products.filter(
       (product) => product.category === "chair"
@@ -65,14 +68,18 @@ const Home = () => {
         <div className="container timer-container">
           <div className="timer-left">
             <p>Limited Offers</p>
-            <h3>Quality Armchair</h3>
+            <h3>Realme 8 Smartphone</h3>
             <Clock />
-            <button>
-              <Link to="shop">Visit Store</Link>
-            </button>
+            <motion.button
+              onClick={scrollTop}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              <Link to="shop/12">Buy Now!</Link>
+            </motion.button>
           </div>
           <div className="timer-right">
-            <img src={timerImg} alt={`${timerImg}.png`} />
+            <img src={productImg17} alt={`${productImg17}.png`} />
           </div>
         </div>
       </section>
