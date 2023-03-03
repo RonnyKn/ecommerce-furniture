@@ -1,10 +1,12 @@
-table {
-  width: 100%;
-}
-
 .cart-items {
   text-align: center;
   margin: 0 auto;
+  height: 500px;
+  overflow: scroll;
+}
+
+table {
+  width: 100%;
 }
 
 .cart-items thead tr th {
@@ -45,6 +47,10 @@ table {
 
 .subtotal h3 span {
   color: salmon;
+}
+
+.subtotal h4 {
+  text-align: center;
 }
 
 /* ======Cart-Count====== */

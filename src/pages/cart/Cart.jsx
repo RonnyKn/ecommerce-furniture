@@ -30,26 +30,27 @@ const Cart = () => {
           <CartCount dataQty={dataQty} />
         </div>
 
-        <div className="cart-items">
+        <div className="cart-items-container">
           {dataCartItems.length === 0 ? (
             <CartEmpty />
           ) : (
             <>
-              <div className="cartitems">
-                <CartItems cartItems={dataCartItems} />
+              <CartItems cartItems={dataCartItems} />
+
+              <div style={{ width: "fit-content", margin: "0 auto" }}>
+                <Link to="/checkout" style={{ width: "fit-content" }}>
+                  <motion.div
+                    className="subtotal"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                  >
+                    <h4>Checkout Here!</h4>
+                    <h3>
+                      TOTAL : $<span>{dataSubtotal}</span>
+                    </h3>
+                  </motion.div>
+                </Link>
               </div>
-              <Link to="/checkout">
-                <motion.div
-                  className="subtotal"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <h5>Checkout now!</h5>
-                  <h3>
-                    SUBTOTAL : $<span>{dataSubtotal}</span>
-                  </h3>
-                </motion.div>
-              </Link>
             </>
           )}
         </div>
