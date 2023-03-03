@@ -39,7 +39,8 @@ table {
   width: fit-content;
   margin: 2rem auto;
   border: 1px solid var(--color-primary);
-  border-radius: 1rem;
+  border-radius: .5rem;
+  background: #e2f2b2;
 }
 
 .subtotal h3 span {

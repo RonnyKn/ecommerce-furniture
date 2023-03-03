@@ -1,8 +1,12 @@
+.checkout-title {
+  text-align: center;
+  padding: 1rem 0;
+}
+
 .checkout-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .checkout-left form {
@@ -19,4 +23,28 @@
 .checkout-left button {
   margin-top: 1rem;
   width: 100%;
+}
+
+/* ================checkOutItems============= */
+
+.checkOutItems {
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  align-items: center;
+
+}
+
+.checkOutItems-left {
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .2rem;
+}
+
+.checkOutItems-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

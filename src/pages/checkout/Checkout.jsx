@@ -1,24 +1,27 @@
 import "./Checkout.css"
 import React from "react"
-import CartItems from "../../components/cart/CartItems"
 import { useSelector } from "react-redux"
-import { selectCartItems } from "../../redux/slice/cartSlice"
+import { selectCartItems, selectTotalAmount } from "../../redux/slice/cartSlice"
 import { toast } from "react-toastify"
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 import CartEmpty from "../../components/cart/CartEmpty"
+import CheckOutItems from "../../components/checkOutItems/CheckOutItems"
 
 const Checkout = () => {
   const dataCartItems = useSelector(selectCartItems)
+  const dataSubtotal = useSelector(selectTotalAmount)
+
   return (
     <section className="checkout">
+      <h3 className="checkout-title container">Check Out</h3>
       <div className="container checkout-container">
         <div className="checkout-left">
           <form>
             <p>Fill your data to proced Shipping</p>
             <label>Full Name</label>
             <input type="text" />
-            <label>Adress</label>
+            <label>Address</label>
             <textarea />
             <label>Phone</label>
             <input type="number" />
@@ -42,13 +45,18 @@ const Checkout = () => {
                 Back to Cart
               </motion.button>
             </Link>
+            <div className="subtotal">
+              <h3>
+                TOTAL : $ <span>{dataSubtotal}</span>
+              </h3>
+            </div>
           </form>
         </div>
         <div className="checkout-right">
           {dataCartItems.length === 0 ? (
             <CartEmpty />
           ) : (
-            <CartItems cartItems={dataCartItems} />
+            <CheckOutItems cartItems={dataCartItems} />
           )}
         </div>
       </div>
