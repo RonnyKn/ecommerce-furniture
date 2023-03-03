@@ -31,7 +31,7 @@ import productImg25 from "../images/wireless-03.png"
 const products = [
   {
     id: "01",
-    productName: "Stone & Beam Westview ",
+    productName: "Stone Beam Modern ",
     imgUrl: productImg01,
     category: "sofa",
     price: 193,
@@ -95,7 +95,7 @@ const products = [
   },
   {
     id: "26",
-    productName: "Rivet Bigelow Modern ",
+    productName: "Asia Bigelow ",
     imgUrl: productImg02,
     category: "sofa",
     price: 253,

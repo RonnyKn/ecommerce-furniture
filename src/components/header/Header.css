@@ -108,4 +108,7 @@
     display: flex;
   }
 
+  .nav-active {
+    border-bottom: 2px solid var(--color-white);
+  }
 }
