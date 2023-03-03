@@ -28,24 +28,25 @@ const Checkout = () => {
               toast.success("Order Process Succesfully")
             }}
           >
-            <em>Fill your data to process Shipping</em>
-            <label>Full Name</label>
+            <strong>Fill your data to complete your Shipping</strong>
+            <em>(*) Required</em>
+            <label>Full Name*</label>
             <input type="text" required />
-            <label>Address</label>
-            <textarea required />
-            <label>Phone</label>
+            <label>E-mail*</label>
+            <input type="email" required />
+            <label>Phone*</label>
             <input type="number" required />
-            {/* <Link to="/home"> */}
+            <label>Address*</label>
+            <textarea required />
+
             <motion.button
               type="submit"
               className="btn"
-              // onClick={() => toast.success("Order Process Succesfully")}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
               Order Now!
             </motion.button>
-            {/* </Link> */}
             <Link to="/cart">
               <motion.button
                 className="btn"

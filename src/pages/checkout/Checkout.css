@@ -25,6 +25,11 @@
   width: 100%;
 }
 
+.checkout-left label {
+  margin-top: .5em;
+  font-size: .8rem;
+}
+
 /* ================checkOutItems============= */
 .checkOutItems-container {
   height: 400px;
