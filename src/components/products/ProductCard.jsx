@@ -34,6 +34,7 @@ const ProductCard = ({
           alt={`${imgUrl}.png`}
         />
       </Link>
+
       <h5>
         <Link
           to={`${pages === "shop" ? "" : "shop/"}${id}`}

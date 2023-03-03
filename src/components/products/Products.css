@@ -13,6 +13,12 @@
   align-items: center;
 }
 
+.trending h5 {
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+
 .trending img {
   box-shadow: 10px 10px 30px rgba(0, 0, 0, .4);
   border-radius: 1rem;
