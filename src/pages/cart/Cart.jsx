@@ -18,6 +18,9 @@ const Cart = () => {
   const dataCartItems = useSelector(selectCartItems)
   const dataSubtotal = useSelector(selectTotalAmount)
   const dataQty = useSelector(selectTotalQty)
+  const scrollTop = () => {
+    window.scroll(0, 0)
+  }
 
   useEffect(() => {
     dispatch(setGetTotal())
@@ -37,7 +40,10 @@ const Cart = () => {
             <>
               <CartItems cartItems={dataCartItems} />
 
-              <div style={{ width: "fit-content", margin: "0 auto" }}>
+              <div
+                style={{ width: "fit-content", margin: "0 auto" }}
+                onClick={scrollTop}
+              >
                 <Link to="/checkout" style={{ width: "fit-content" }}>
                   <motion.div
                     className="subtotal"
