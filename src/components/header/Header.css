@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .title1 {
@@ -64,9 +65,47 @@
   background: red;
 }
 
+.header-menu {
+  display: none;
+}
+
 /* =============MEDIA QUERIES=========== */
 @media screen and (max-width:550px) {
   .header-nav ul {
-    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    background: rgba(10, 29, 56, .9);
+    color: var(--color-white);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    transform: rotateX(-90deg);
+    opacity: 0;
+    transform-origin: top;
+    animation: animateNavbar 600ms ease forwards;
   }
+
+  @keyframes animateNavbar {
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+      transition: var(--transition);
+    }
+  }
+
+  .nav-show {
+    display: flex;
+  }
+
+  .nav-hide {
+    display: none;
+  }
+
+  .header-menu {
+    display: flex;
+  }
+
 }

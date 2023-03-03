@@ -1,5 +1,5 @@
 import "./Header.css"
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { Link, NavLink } from "react-router-dom"
 import { SlHandbag } from "react-icons/sl"
@@ -11,6 +11,8 @@ import {
   selectCartItems,
 } from "../../redux/slice/cartSlice"
 import { toast } from "react-toastify"
+import { GoThreeBars } from "react-icons/go"
+import { MdOutlineClose } from "react-icons/md"
 
 const Header = () => {
   const navigations = [
@@ -23,6 +25,7 @@ const Header = () => {
       to: "/shop",
     },
   ]
+  const [isNavShow, setIsnavShow] = useState(true)
   const dispatch = useDispatch()
   const dataCartItems = useSelector(selectCartItems)
   const totalQty = useSelector(selectTotalQty)
@@ -47,7 +50,8 @@ const Header = () => {
             <strong className="title2">SHOP</strong>
           </Link>
         </motion.div>
-        <div className="header-nav">
+
+        <div className={`header-nav ${isNavShow ? "nav-show" : "nav-hide"}`}>
           <ul>
             {navigations.map((val, idx) => (
               <motion.li
@@ -67,6 +71,7 @@ const Header = () => {
             ))}
           </ul>
         </div>
+
         <div className="header-navicons">
           <motion.div
             className="header-cart"
@@ -86,6 +91,16 @@ const Header = () => {
             alt={`userIcon.png`}
             onClick={() => toast.error("Available soon")}
           />
+          <button
+            className="header-menu"
+            onClick={() => setIsnavShow(!isNavShow)}
+          >
+            {isNavShow ? (
+              <MdOutlineClose size="1.8em" />
+            ) : (
+              <GoThreeBars size="1.8em" />
+            )}
+          </button>
         </div>
       </div>
     </header>
