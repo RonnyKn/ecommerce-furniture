@@ -45,7 +45,7 @@
   display: block;
 }
 
-li:hover {
+.footer-permalinks li:hover {
   color: var(--color-white);
   font-weight: bold;
 }
