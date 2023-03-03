@@ -50,18 +50,18 @@ const Home = () => {
       </section>
 
       {/* TRENDING PRODUCTS */}
-      <section className="trending__products">
+      <section className="trending__products" id="trending">
         <h3 className="section-title">Trending Product</h3>
         <TrendingProducts filteredProducts={dataTrending} />
       </section>
 
       {/* BEST SALES PRODUCT */}
-      <section className="sales__products">
+      <section className="sales__products" id="sales">
         <h3 className="section-title">Best Sales Product</h3>
         <TrendingProducts filteredProducts={dataSales} />
       </section>
 
-      <section className="timer">
+      <section className="timer" id="timer">
         <div className="ribbon">
           <span>Disc 80%</span>
         </div>
@@ -84,12 +84,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="new__arrival">
+      <section className="new__arrival" id="arrival">
         <h3 className="section-title">New Arrival</h3>
         <TrendingProducts filteredProducts={dataNewArrival} />
       </section>
 
-      <section className="popular__products">
+      <section className="popular__products" id="popular">
         <h3 className="section-title">Popular in Category</h3>
         <TrendingProducts filteredProducts={dataPopular} />
       </section>

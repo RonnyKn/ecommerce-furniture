@@ -4,7 +4,8 @@
   color: var(--color-small-text);
 }
 
-.footer-logo span {
+.footer-logo span,
+.footer-logo strong {
   color: var(--color-white);
   font-weight: bold;
 }
@@ -42,6 +43,11 @@
 
 .footer-copyright p span {
   display: block;
+}
+
+li:hover {
+  color: var(--color-white);
+  font-weight: bold;
 }
 
 /* ============MEDIA QUERIES============ */
