@@ -20,3 +20,8 @@
   outline: auto;
   padding: .5rem;
 }
+
+.login-container button {
+  margin-top: 1rem;
+  width: 100%;
+}
