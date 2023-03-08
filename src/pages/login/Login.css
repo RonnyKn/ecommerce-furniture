@@ -25,3 +25,8 @@
   margin-top: 1rem;
   width: 100%;
 }
+
+.login-container span {
+  font-weight: bold;
+  color: salmon;
+}
