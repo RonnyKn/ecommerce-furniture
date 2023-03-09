@@ -31,7 +31,7 @@ const Login = () => {
       navigate("/checkout")
     } catch (error) {
       setLoading(false)
-      toast.error(error.message)
+      toast.error("Error, email & password didnt match")
     }
   }
 
