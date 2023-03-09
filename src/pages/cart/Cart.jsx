@@ -44,7 +44,7 @@ const Cart = () => {
                 style={{ width: "fit-content", margin: "0 auto" }}
                 onClick={scrollTop}
               >
-                <Link to="/checkout" style={{ width: "fit-content" }}>
+                <Link to="/login" style={{ width: "fit-content" }}>
                   <motion.div
                     className="subtotal"
                     whileHover={{ scale: 1.1 }}
