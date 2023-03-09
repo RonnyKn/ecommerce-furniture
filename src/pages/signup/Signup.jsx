@@ -2,18 +2,71 @@ import "./Signup.css"
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
+
+import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage"
+
+import { setDoc, doc } from "firebase/firestore"
+
+import { auth } from "../../firebaseConfig/firebaseConfig"
+import { storage } from "../../firebaseConfig/firebaseConfig"
+import { db } from "../../firebaseConfig/firebaseConfig"
+
+import { toast } from "react-toastify"
 
 const Signup = () => {
   const [email, setEmail] = useState("")
   const [userName, setUserName] = useState("")
   const [password, setPassword] = useState("")
   const [file, setFile] = useState(null)
+  const [loading, setLoading] = useState(false)
+
+  const signup = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      )
+
+      const user = userCredential.user
+      const storageRef = ref(storage, `images/${Date.now() + userName}`)
+      const uploadTask = uploadBytesResumable(storageRef, file)
+      uploadTask.on(
+        (error) => {
+          toast.error(error.message)
+        },
+        () => {
+          getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
+            //update user profile
+            await updateProfile(user, {
+              displayName: userName,
+              photoURL: downloadURL,
+            })
+            //store user data in firestore database
+            await setDoc(doc(db, "users", user.uid), {
+              uid: user.uid,
+              displayName: userName,
+              email,
+              photoURL: downloadURL,
+            })
+          })
+        }
+      )
+      console.log(user)
+    } catch (error) {
+      toast.error("something went wrong ")
+    }
+  }
 
   return (
     <section className="login">
       <div className="container login-container">
-        <h1>Login</h1>
-        <form action="submit">
+        <h1>REGISTER</h1>
+        <form action="submit" onSubmit={signup}>
           <div>
             <label>
               <h4>User Name</h4>
@@ -51,7 +104,11 @@ const Signup = () => {
             />
           </div>
           <div>
-            <input type="file" onChange={(e) => setFile(e.target.files[0])} />
+            <input
+              type="file"
+              onChange={(e) => setFile(e.target.files[0])}
+              style={{ outline: "none", marginTop: ".5rem" }}
+            />
           </div>
           <motion.button
             type="submit"
