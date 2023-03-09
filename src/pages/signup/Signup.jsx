@@ -1,6 +1,6 @@
 import "./Signup.css"
 import React, { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { motion } from "framer-motion"
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
 
@@ -20,6 +20,7 @@ const Signup = () => {
   const [password, setPassword] = useState("")
   const [file, setFile] = useState(null)
   const [loading, setLoading] = useState(false)
+  const navigate = useNavigate()
 
   const signup = async (e) => {
     e.preventDefault()
@@ -54,15 +55,17 @@ const Signup = () => {
               photoURL: downloadURL,
             })
           })
-          toast.success("account created successfully")
-          setUserName("")
-          setEmail("")
-          setPassword("")
-          setFile(null)
         }
       )
-      console.log(user)
+      setLoading(false)
+      toast.success("account created successfully")
+      setUserName("")
+      setEmail("")
+      setPassword("")
+      setFile(null)
+      navigate("/login")
     } catch (error) {
+      setLoading(false)
       toast.error("something went wrong ")
     }
   }
@@ -71,65 +74,69 @@ const Signup = () => {
     <section className="login">
       <div className="container login-container">
         <h1>REGISTER</h1>
-        <form action="submit" onSubmit={signup}>
-          <div>
-            <label>
-              <h4>User Name</h4>
-            </label>
-            <input
-              type="text"
-              placeholder="Enter your User Name.."
-              required
-              value={userName}
-              onChange={(e) => setUserName(e.target.value)}
-            />
-          </div>
-          <div>
-            <label>
-              <h4>E-mail</h4>
-            </label>
-            <input
-              type="email"
-              placeholder="Enter your email.."
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </div>
-          <div>
-            <label>
-              <h4>Password</h4>
-            </label>
-            <input
-              type="password"
-              placeholder="Enter your password.."
-              required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
-          <div>
-            <input
-              type="file"
-              onChange={(e) => setFile(e.target.files[0])}
-              style={{ outline: "none", marginTop: ".5rem" }}
-            />
-          </div>
-          <motion.button
-            type="submit"
-            className="btn"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            Sign Up
-          </motion.button>
-          <p>
-            Already have an Account?
-            <span>
-              <Link to="/login"> Login here! </Link>
-            </span>
-          </p>
-        </form>
+        {loading ? (
+          <h1>Loading..</h1>
+        ) : (
+          <form action="submit" onSubmit={signup}>
+            <div>
+              <label>
+                <h4>User Name</h4>
+              </label>
+              <input
+                type="text"
+                placeholder="Enter your User Name.."
+                required
+                value={userName}
+                onChange={(e) => setUserName(e.target.value)}
+              />
+            </div>
+            <div>
+              <label>
+                <h4>E-mail</h4>
+              </label>
+              <input
+                type="email"
+                placeholder="Enter your email.."
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div>
+              <label>
+                <h4>Password</h4>
+              </label>
+              <input
+                type="password"
+                placeholder="Enter your password.."
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <div>
+              <input
+                type="file"
+                onChange={(e) => setFile(e.target.files[0])}
+                style={{ outline: "none", marginTop: ".5rem" }}
+              />
+            </div>
+            <motion.button
+              type="submit"
+              className="btn"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Sign Up
+            </motion.button>
+            <p>
+              Already have an Account?
+              <span>
+                <Link to="/login"> Login here! </Link>
+              </span>
+            </p>
+          </form>
+        )}
       </div>
     </section>
   )
