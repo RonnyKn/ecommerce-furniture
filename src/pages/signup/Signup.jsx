@@ -54,6 +54,11 @@ const Signup = () => {
               photoURL: downloadURL,
             })
           })
+          toast.success("account created successfully")
+          setUserName("")
+          setEmail("")
+          setPassword("")
+          setFile(null)
         }
       )
       console.log(user)
