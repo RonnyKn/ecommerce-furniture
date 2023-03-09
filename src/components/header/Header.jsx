@@ -13,6 +13,7 @@ import {
 import { toast } from "react-toastify"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { MdOutlineClose } from "react-icons/md"
+import useAuth from "../../customHooks/useAuth"
 
 const Header = () => {
   const navigations = [
@@ -36,6 +37,8 @@ const Header = () => {
   useEffect(() => {
     dispatch(setGetTotal())
   }, [dataCartItems, dispatch])
+
+  const { currentUser } = useAuth()
 
   return (
     <header className="header">
@@ -87,7 +90,7 @@ const Header = () => {
           <motion.img
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
-            src={userIcon}
+            src={currentUser ? currentUser.photoURL : userIcon}
             alt={`userIcon.png`}
             onClick={() => toast.error("Available soon")}
           />
