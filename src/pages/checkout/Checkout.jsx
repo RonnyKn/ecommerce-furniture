@@ -31,13 +31,13 @@ const Checkout = () => {
             <strong>Fill your data to complete your Shipping</strong>
             <em>(*) Required</em>
             <label>Full Name*</label>
-            <input type="text" required />
+            <input type="text" required placeholder="Enter your fullname..." />
             <label>E-mail*</label>
-            <input type="email" required />
+            <input type="email" required placeholder="Enter your email..." />
             <label>Phone*</label>
-            <input type="number" required />
+            <input type="number" required placeholder="Enter your phone..." />
             <label>Address*</label>
-            <textarea required />
+            <textarea required placeholder="Enter your address..." />
 
             <motion.button
               type="submit"
