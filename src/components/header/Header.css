@@ -45,6 +45,10 @@
   cursor: pointer;
 }
 
+.navicons-profile {
+  position: relative;
+}
+
 .nav-active {
   border-bottom: 2px solid black;
 }
@@ -66,6 +70,53 @@
 }
 
 .header-menu {
+  display: none;
+}
+
+.profile__actions {
+  position: absolute;
+  top: 160%;
+  right: 10%;
+  padding: .5rem;
+  width: 150px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: .3rem;
+  z-index: 5;
+  text-align: center;
+}
+
+.profile__actions::before {
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: 82%;
+  content: '';
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background: var(--color-primary);
+}
+
+.profile__actions p {
+  font-size: .7rem;
+}
+
+.profile__actions span {
+  cursor: pointer;
+  font-size: .8rem;
+  background: var(--color-white);
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.profile__actions-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__actions-hide {
   display: none;
 }
 

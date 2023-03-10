@@ -10,10 +10,12 @@ import {
   setGetTotal,
   selectCartItems,
 } from "../../redux/slice/cartSlice"
-import { toast } from "react-toastify"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { MdOutlineClose } from "react-icons/md"
 import useAuth from "../../customHooks/useAuth"
+import { signOut } from "firebase/auth"
+import { auth } from "../../firebaseConfig/firebaseConfig"
+import { toast } from "react-toastify"
 
 const Header = () => {
   const navigations = [
@@ -27,6 +29,7 @@ const Header = () => {
     },
   ]
   const [isNavShow, setIsnavShow] = useState(false)
+  const [profileActions, setProfileActions] = useState(false)
   const dispatch = useDispatch()
   const dataCartItems = useSelector(selectCartItems)
   const totalQty = useSelector(selectTotalQty)
@@ -34,11 +37,24 @@ const Header = () => {
     window.scroll(0, 0)
   }
 
+  const logOut = () => {
+    signOut(auth)
+      .then(() => {
+        toast.success("logout Succesfully")
+      })
+      .catch((error) => {
+        toast.error("failed to Logout", error.message)
+      })
+    setProfileActions(false)
+  }
+
   useEffect(() => {
     dispatch(setGetTotal())
   }, [dataCartItems, dispatch])
 
   const { currentUser } = useAuth()
+
+  console.log(currentUser)
 
   return (
     <header className="header">
@@ -87,13 +103,42 @@ const Header = () => {
               {totalQty === 0 ? "" : <span>{totalQty}</span>}
             </Link>
           </motion.div>
-          <motion.img
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            src={currentUser ? currentUser.photoURL : userIcon}
-            alt={`userIcon.png`}
-            onClick={() => toast.error("Available soon")}
-          />
+          <div className="navicons-profile">
+            <motion.img
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              src={currentUser ? currentUser.photoURL : userIcon}
+              alt={`userIcon.png`}
+              onClick={() => setProfileActions(!profileActions)}
+            />
+            <div
+              className={`profile__actions ${
+                profileActions
+                  ? "profile__actions-show"
+                  : "profile__actions-hide"
+              }`}
+            >
+              {currentUser ? (
+                <div>
+                  <p>
+                    Logged in as <h4>{currentUser?.displayName}</h4>
+                  </p>
+                  <span onClick={logOut} className="btn">
+                    Logout
+                  </span>
+                </div>
+              ) : (
+                <Link to="/login">
+                  <span
+                    className="btn"
+                    onClick={() => setProfileActions(false)}
+                  >
+                    Login
+                  </span>
+                </Link>
+              )}
+            </div>
+          </div>
           <button
             className="header-menu"
             onClick={() => setIsnavShow(!isNavShow)}
