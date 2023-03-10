@@ -9,6 +9,7 @@ import {
   selectTotalQty,
   setGetTotal,
   selectCartItems,
+  setClearCart,
 } from "../../redux/slice/cartSlice"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { MdOutlineClose } from "react-icons/md"
@@ -33,6 +34,7 @@ const Header = () => {
   const dispatch = useDispatch()
   const dataCartItems = useSelector(selectCartItems)
   const totalQty = useSelector(selectTotalQty)
+
   const scrollTop = () => {
     window.scroll(0, 0)
   }
@@ -46,6 +48,7 @@ const Header = () => {
         toast.error("failed to Logout", error.message)
       })
     setProfileActions(false)
+    dispatch(setClearCart())
   }
 
   useEffect(() => {
@@ -53,8 +56,6 @@ const Header = () => {
   }, [dataCartItems, dispatch])
 
   const { currentUser } = useAuth()
-
-  console.log(currentUser)
 
   return (
     <header className="header">

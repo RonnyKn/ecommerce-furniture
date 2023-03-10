@@ -40,14 +40,16 @@
   align-items: center;
 }
 
-.header-navicons img {
-  width: 2.2rem;
-  cursor: pointer;
-}
-
 .navicons-profile {
   position: relative;
 }
+
+.navicons-profile img {
+  width: 2.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 
 .nav-active {
   border-bottom: 2px solid black;
