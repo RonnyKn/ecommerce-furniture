@@ -120,16 +120,34 @@ const Header = () => {
               }`}
             >
               {currentUser ? (
-                <div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: ".5rem",
+                  }}
+                >
                   <p>
                     Logged in as <h4>{currentUser?.displayName}</h4>
                   </p>
+                  <Link
+                    to="/dashboard"
+                    style={{
+                      display: `${
+                        currentUser?.email === "admin@gmail.com"
+                          ? "flex"
+                          : "none"
+                      }`,
+                    }}
+                  >
+                    <span className="btn">Dashboard</span>
+                  </Link>
                   <span onClick={logOut} className="btn">
                     Logout
                   </span>
                 </div>
               ) : (
-                <>
+                <div>
                   <Link to="/login">
                     <span
                       className="btn"
@@ -138,10 +156,7 @@ const Header = () => {
                       Login
                     </span>
                   </Link>
-                  <Link to="/dashboard">
-                    <span className="btn">Dashboard</span>
-                  </Link>
-                </>
+                </div>
               )}
             </div>
           </div>

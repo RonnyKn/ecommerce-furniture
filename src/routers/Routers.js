@@ -1,6 +1,6 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
-import Addproducts from "../admin/Addproducts"
+import AddProducts from "../admin/AddProducts"
 import AllProducts from "../admin/AllProducts"
 import Dashboard from "../admin/Dashboard"
 import Cart from "../pages/cart/Cart"
@@ -25,7 +25,7 @@ const Routers = () => {
         <Route path="checkout" element={<Checkout />} />
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="dashboard/all-products" element={<AllProducts />} />
-        <Route path="dashboard/add-products" element={<Addproducts />} />
+        <Route path="dashboard/add-products" element={<AddProducts />} />
         <Route path="checkout" element={<Checkout />} />
       </Route>
 
