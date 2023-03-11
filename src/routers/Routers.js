@@ -2,6 +2,7 @@ import React from "react"
 import { Route, Routes } from "react-router-dom"
 import Addproducts from "../admin/Addproducts"
 import AllProducts from "../admin/AllProducts"
+import Dashboard from "../admin/Dashboard"
 import Cart from "../pages/cart/Cart"
 import Checkout from "../pages/checkout/Checkout"
 import Home from "../pages/home/Home"
@@ -22,6 +23,7 @@ const Routers = () => {
 
       <Route path="/*" element={<ProtectedRoutes />}>
         <Route path="checkout" element={<Checkout />} />
+        <Route path="dashboard" element={<Dashboard />} />
         <Route path="dashboard/all-products" element={<AllProducts />} />
         <Route path="dashboard/add-products" element={<Addproducts />} />
         <Route path="checkout" element={<Checkout />} />
