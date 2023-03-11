@@ -1,5 +1,7 @@
 import React from "react"
 import { Route, Routes } from "react-router-dom"
+import Addproducts from "../admin/Addproducts"
+import AllProducts from "../admin/AllProducts"
 import Cart from "../pages/cart/Cart"
 import Checkout from "../pages/checkout/Checkout"
 import Home from "../pages/home/Home"
@@ -17,14 +19,14 @@ const Routers = () => {
       <Route path="shop" element={<Shop />} />
       <Route path="shop/:id" element={<ProductDetails />} />
       <Route path="cart" element={<Cart />} />
-      <Route
-        path="checkout"
-        element={
-          <ProtectedRoutes>
-            <Checkout />
-          </ProtectedRoutes>
-        }
-      />
+
+      <Route path="/*" element={<ProtectedRoutes />}>
+        <Route path="checkout" element={<Checkout />} />
+        <Route path="dashboard/all-products" element={<AllProducts />} />
+        <Route path="dashboard/add-products" element={<Addproducts />} />
+        <Route path="checkout" element={<Checkout />} />
+      </Route>
+
       <Route path="login" element={<Login />} />
       <Route path="signup" element={<Signup />} />
     </Routes>
