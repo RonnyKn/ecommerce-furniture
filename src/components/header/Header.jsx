@@ -129,14 +129,19 @@ const Header = () => {
                   </span>
                 </div>
               ) : (
-                <Link to="/login">
-                  <span
-                    className="btn"
-                    onClick={() => setProfileActions(false)}
-                  >
-                    Login
-                  </span>
-                </Link>
+                <>
+                  <Link to="/login">
+                    <span
+                      className="btn"
+                      onClick={() => setProfileActions(false)}
+                    >
+                      Login
+                    </span>
+                  </Link>
+                  <Link to="/dashboard">
+                    <span className="btn">Dashboard</span>
+                  </Link>
+                </>
               )}
             </div>
           </div>
