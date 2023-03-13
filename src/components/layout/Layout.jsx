@@ -14,7 +14,7 @@ const Layout = () => {
       <div>
         <Routers />
       </div>
-      <Footer />
+      {location.pathname.startsWith("/dashboard") ? null : <Footer />}
     </>
   )
 }
