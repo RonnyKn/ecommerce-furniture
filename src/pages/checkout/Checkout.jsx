@@ -38,15 +38,16 @@ const Checkout = () => {
             <input type="number" required placeholder="Enter your phone..." />
             <label>Address*</label>
             <textarea required placeholder="Enter your address..." />
-
-            <motion.button
-              type="submit"
-              className="btn"
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              Order Now!
-            </motion.button>
+            {dataCartItems.length === 0 ? null : (
+              <motion.button
+                type="submit"
+                className="btn"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                Order Now!
+              </motion.button>
+            )}
             <Link to="/cart">
               <motion.button
                 className="btn"
