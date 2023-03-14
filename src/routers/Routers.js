@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import AddProducts from "../admin/AddProducts"
 import AllProducts from "../admin/AllProducts"
 import Dashboard from "../admin/Dashboard"
+import Users from "../admin/Users"
 import Cart from "../pages/cart/Cart"
 import Checkout from "../pages/checkout/Checkout"
 import Home from "../pages/home/Home"
@@ -26,6 +27,7 @@ const Routers = () => {
         <Route path="dashboard" element={<Dashboard />} />
         <Route path="dashboard/all-products" element={<AllProducts />} />
         <Route path="dashboard/add-products" element={<AddProducts />} />
+        <Route path="dashboard/users-products" element={<Users />} />
       </Route>
 
       <Route path="login" element={<Login />} />

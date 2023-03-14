@@ -1,8 +1,7 @@
 import React, { useState } from "react"
-import userIcon from "../assets/images/user-icon.png"
 import { motion } from "framer-motion"
 import useAuth from "../customHooks/useAuth"
-import { Link } from "react-router-dom"
+import { Link, NavLink, useLocation } from "react-router-dom"
 import ProfileActions from "../components/profileActions/ProfileActions"
 
 const AdminNav = () => {
@@ -11,6 +10,21 @@ const AdminNav = () => {
   const scrollTop = () => {
     window.scroll(0, 0)
   }
+  const location = useLocation()
+  const adminMenus = [
+    {
+      menu: "Add Product",
+      path: "/dashboard/add-products",
+    },
+    {
+      menu: "All Product",
+      path: "/dashboard/all-products",
+    },
+    {
+      menu: "Users",
+      path: "/dashboard/users-products",
+    },
+  ]
 
   return (
     <nav className="admin__nav">
@@ -25,7 +39,16 @@ const AdminNav = () => {
             <strong className="title2">SHOP</strong>
           </Link>
         </motion.div>
-        <input type="search" placeholder="input product name" />
+
+        {location.pathname.includes("products") ? (
+          <div className="admin__nav-menus">
+            {adminMenus?.map((val, idx) => (
+              <NavLink key={idx} to={val?.path}>
+                {val?.menu}
+              </NavLink>
+            ))}
+          </div>
+        ) : null}
 
         <ProfileActions
           profileActions={profileActions}

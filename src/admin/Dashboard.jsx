@@ -34,7 +34,7 @@ const Dashboard = () => {
             All product
           </motion.div>
         </Link>
-        <Link to="/dashboard/users">
+        <Link to="/dashboard/users-products">
           <motion.div
             className="dashboard-menu"
             style={{ background: "#fdefe6" }}

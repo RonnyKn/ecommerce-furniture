@@ -24,14 +24,14 @@
   border-radius: 50%;
 }
 
-.admin__nav-container input {
-  width: 70%;
-  padding: .5rem;
-  border-radius: .4rem;
-}
-
 .admin__nav-logo {
   color: var(--color-white);
+}
+
+.admin__nav-menus {
+  color: var(--color-white);
+  display: flex;
+  gap: 1rem;
 }
 
 /* ============DASHBOARD========== */
