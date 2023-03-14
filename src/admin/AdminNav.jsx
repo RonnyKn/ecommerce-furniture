@@ -43,7 +43,13 @@ const AdminNav = () => {
         {location.pathname.includes("products") ? (
           <div className="admin__nav-menus">
             {adminMenus?.map((val, idx) => (
-              <NavLink key={idx} to={val?.path}>
+              <NavLink
+                key={idx}
+                to={val?.path}
+                className={(navClass) =>
+                  navClass.isActive ? "admin__nav-active" : null
+                }
+              >
                 {val?.menu}
               </NavLink>
             ))}

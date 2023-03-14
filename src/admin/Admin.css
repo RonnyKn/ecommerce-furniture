@@ -34,6 +34,10 @@
   gap: 1rem;
 }
 
+.admin__nav-active {
+  border-bottom: 2px solid var(--color-white);
+}
+
 /* ============DASHBOARD========== */
 .dashboard h3 {
   margin-top: 3rem;
