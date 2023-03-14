@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { Link, NavLink } from "react-router-dom"
 import { SlHandbag } from "react-icons/sl"
-import userIcon from "../../assets/images/user-icon.png"
 import { useDispatch, useSelector } from "react-redux"
 import {
   selectTotalQty,
@@ -90,20 +89,13 @@ const Header = () => {
               {totalQty === 0 ? "" : <span>{totalQty}</span>}
             </Link>
           </motion.div>
-          <div className="navicons-profile">
-            <motion.img
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              src={currentUser ? currentUser.photoURL : userIcon}
-              alt={`userIcon.png`}
-              onClick={() => setProfileActions(!profileActions)}
-            />
-            <ProfileActions
-              profileActions={profileActions}
-              setProfileActions={setProfileActions}
-              currentUser={currentUser}
-            />
-          </div>
+
+          <ProfileActions
+            profileActions={profileActions}
+            setProfileActions={setProfileActions}
+            currentUser={currentUser}
+          />
+
           <button
             className="header-menu"
             onClick={() => setIsnavShow(!isNavShow)}

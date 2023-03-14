@@ -26,20 +26,12 @@ const AdminNav = () => {
           </Link>
         </motion.div>
         <input type="search" placeholder="input product name" />
-        <div className="admin__nav-profile">
-          <motion.img
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            src={currentUser ? currentUser.photoURL : userIcon}
-            alt={`userIcon.png`}
-            onClick={() => setProfileActions(!profileActions)}
-          />
-          <ProfileActions
-            profileActions={profileActions}
-            setProfileActions={setProfileActions}
-            currentUser={currentUser}
-          />
-        </div>
+
+        <ProfileActions
+          profileActions={profileActions}
+          setProfileActions={setProfileActions}
+          currentUser={currentUser}
+        />
       </div>
     </nav>
   )
