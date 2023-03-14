@@ -2,7 +2,7 @@ import React from "react"
 import "./Admin.css"
 
 const Dashboard = () => {
-  return <div>Dashboard</div>
+  return <section>Dashboard</section>
 }
 
 export default Dashboard
