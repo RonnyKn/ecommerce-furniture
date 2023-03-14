@@ -15,6 +15,10 @@
   gap: 3rem;
 }
 
+.admin__nav-profile {
+  position: relative;
+}
+
 .admin__nav-profile img {
   width: 2.2rem;
   cursor: pointer;

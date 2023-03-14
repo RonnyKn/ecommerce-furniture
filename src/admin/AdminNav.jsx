@@ -3,6 +3,7 @@ import userIcon from "../assets/images/user-icon.png"
 import { motion } from "framer-motion"
 import useAuth from "../customHooks/useAuth"
 import { Link } from "react-router-dom"
+import ProfileActions from "../components/profileActions/ProfileActions"
 
 const AdminNav = () => {
   const [profileActions, setProfileActions] = useState(false)
@@ -32,6 +33,11 @@ const AdminNav = () => {
             src={currentUser ? currentUser.photoURL : userIcon}
             alt={`userIcon.png`}
             onClick={() => setProfileActions(!profileActions)}
+          />
+          <ProfileActions
+            profileActions={profileActions}
+            setProfileActions={setProfileActions}
+            currentUser={currentUser}
           />
         </div>
       </div>

@@ -9,14 +9,12 @@ import {
   selectTotalQty,
   setGetTotal,
   selectCartItems,
-  setClearCart,
 } from "../../redux/slice/cartSlice"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { MdOutlineClose } from "react-icons/md"
 import useAuth from "../../customHooks/useAuth"
-import { signOut } from "firebase/auth"
-import { auth } from "../../firebaseConfig/firebaseConfig"
-import { toast } from "react-toastify"
+
+import ProfileActions from "../profileActions/ProfileActions"
 
 const Header = () => {
   const navigations = [
@@ -37,18 +35,6 @@ const Header = () => {
 
   const scrollTop = () => {
     window.scroll(0, 0)
-  }
-
-  const logOut = () => {
-    signOut(auth)
-      .then(() => {
-        toast.success("logout Succesfully")
-      })
-      .catch((error) => {
-        toast.error("failed to Logout", error.message)
-      })
-    setProfileActions(false)
-    dispatch(setClearCart())
   }
 
   useEffect(() => {
@@ -112,53 +98,11 @@ const Header = () => {
               alt={`userIcon.png`}
               onClick={() => setProfileActions(!profileActions)}
             />
-            <div
-              className={`profile__actions ${
-                profileActions
-                  ? "profile__actions-show"
-                  : "profile__actions-hide"
-              }`}
-            >
-              {currentUser ? (
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: ".5rem",
-                  }}
-                >
-                  <p>
-                    Logged in as <h4>{currentUser?.displayName}</h4>
-                  </p>
-                  <Link
-                    to="/dashboard"
-                    style={{
-                      display: `${
-                        currentUser?.email === "admin@gmail.com"
-                          ? "flex"
-                          : "none"
-                      }`,
-                    }}
-                  >
-                    <span className="btn">Dashboard</span>
-                  </Link>
-                  <span onClick={logOut} className="btn">
-                    Logout
-                  </span>
-                </div>
-              ) : (
-                <div>
-                  <Link to="/login">
-                    <span
-                      className="btn"
-                      onClick={() => setProfileActions(false)}
-                    >
-                      Login
-                    </span>
-                  </Link>
-                </div>
-              )}
-            </div>
+            <ProfileActions
+              profileActions={profileActions}
+              setProfileActions={setProfileActions}
+              currentUser={currentUser}
+            />
           </div>
           <button
             className="header-menu"
