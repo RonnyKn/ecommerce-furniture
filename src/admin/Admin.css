@@ -55,6 +55,10 @@
 }
 
 .dashboard-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 2rem;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, .4);
   border-radius: .5rem;

@@ -2,6 +2,9 @@ import "./Admin.css"
 import React from "react"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
+import { MdOutlineAddCircle } from "react-icons/md"
+import { BsPeopleFill } from "react-icons/bs"
+import { FaWarehouse } from "react-icons/fa"
 const Dashboard = () => {
   return (
     <section className="dashboard">
@@ -16,6 +19,7 @@ const Dashboard = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
+            <MdOutlineAddCircle size="2em" />
             Add product
           </motion.div>
         </Link>
@@ -26,6 +30,7 @@ const Dashboard = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
+            <FaWarehouse size="2em" />
             All product
           </motion.div>
         </Link>
@@ -36,6 +41,7 @@ const Dashboard = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
+            <BsPeopleFill size="2em" />
             Users
           </motion.div>
         </Link>
