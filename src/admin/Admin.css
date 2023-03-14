@@ -68,3 +68,16 @@
   border-radius: .5rem;
   font-weight: bold;
 }
+
+/* =========MEDIA QUERIES====== */
+@media screen and (max-width:768px) {
+  .dashboard-container {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
+}
