@@ -15,7 +15,9 @@ const Dashboard = () => {
         <div className="dashboard-menu">
           <Link to="/dashboard/all-products">All product</Link>
         </div>
-        <div className="dashboard-menu">{/* <Link>Users</Link> */}</div>
+        <div className="dashboard-menu">
+          <Link to="/dashboard/users">Users</Link>
+        </div>
       </div>
     </section>
   )
