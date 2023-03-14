@@ -36,10 +36,27 @@
 
 /* ============DASHBOARD========== */
 .dashboard h3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   display: flex;
+  gap: .3rem;
   justify-content: center;
 }
 
 .dashboard span {
   color: salmon;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 3rem;
+}
+
+.dashboard-menu {
+  padding: 2rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, .4);
+  border-radius: .5rem;
+  font-weight: bold;
 }
