@@ -57,7 +57,9 @@ const ProfileActions = ({ profileActions, setProfileActions, currentUser }) => {
                 to="/dashboard"
                 style={{
                   display: `${
-                    currentUser?.email === "admin@gmail.com" ? "flex" : "none"
+                    currentUser?.email === `${process.env.REACT_APP_AUTH_ADMIN}`
+                      ? "flex"
+                      : "none"
                   }`,
                 }}
               >
