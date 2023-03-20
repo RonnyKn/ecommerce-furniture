@@ -13,11 +13,11 @@ const AdminNav = () => {
   const location = useLocation()
   const adminMenus = [
     {
-      menu: "Add Product",
+      menu: "Add Products",
       path: "/dashboard/add-products",
     },
     {
-      menu: "All Product",
+      menu: "All Products",
       path: "/dashboard/all-products",
     },
     {

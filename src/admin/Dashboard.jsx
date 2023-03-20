@@ -20,7 +20,7 @@ const Dashboard = () => {
             whileTap={{ scale: 0.9 }}
           >
             <MdOutlineAddCircle size="2em" />
-            Add product
+            Add Products
           </motion.div>
         </Link>
         <Link to="/dashboard/all-products">
@@ -31,7 +31,7 @@ const Dashboard = () => {
             whileTap={{ scale: 0.9 }}
           >
             <FaWarehouse size="2em" />
-            All product
+            All Products
           </motion.div>
         </Link>
         <Link to="/dashboard/users-products">
