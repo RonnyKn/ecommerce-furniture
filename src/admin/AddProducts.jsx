@@ -1,22 +1,56 @@
-import React from "react"
+import React, { useState } from "react"
 import { MdOutlineAddCircle } from "react-icons/md"
 import { motion } from "framer-motion"
+import { async } from "@firebase/util"
 
 const AddProducts = () => {
+  const [enterName, setEnterName] = useState("")
+  const [enterShortDesc, setEnterShortDesc] = useState("")
+  const [enterDescription, setEnterDescription] = useState("")
+  const [enterPrice, setEnterPrice] = useState("")
+  const [enterCategory, setEnterCategory] = useState("")
+  const [enterImg, setEnterImg] = useState(null)
+
+  const addProduct = async (e) => {
+    e.preventDefault()
+
+    const product = {
+      producName: enterName,
+      shortDesc: enterShortDesc,
+      description: enterDescription,
+      price: enterPrice,
+      category: enterCategory,
+      imgUrl: enterImg,
+    }
+    console.log(product)
+  }
+
   return (
     <section className="admin__addProducts">
       <div className="container admin__addProducts-container">
         <h3 className="section-title">Add Products</h3>
         <p className="required-text">(*) Required</p>
-        <form onSubmit={() => {}}>
+        <form onSubmit={addProduct}>
           <div className="form-group">
             <label>Product Name*</label>
-            <input type="text" placeholder="Ex: Iphone 13 Pro.." required />
+            <input
+              type="text"
+              placeholder="Ex: Iphone 13 Pro.."
+              required
+              value={enterName}
+              onChange={(e) => setEnterName(e.target.value)}
+            />
           </div>
 
           <div className="form-group">
             <label>Short Description*</label>
-            <input type="text" placeholder="Enter Tagline Product.." required />
+            <input
+              type="text"
+              placeholder="Enter Tagline Product.."
+              required
+              value={enterShortDesc}
+              onChange={(e) => setEnterShortDesc(e.target.value)}
+            />
           </div>
 
           <div className="form-group">
@@ -25,21 +59,38 @@ const AddProducts = () => {
               type="text"
               placeholder="Enter Description Product.."
               required
+              value={enterDescription}
+              onChange={(e) => setEnterDescription(e.target.value)}
             />
           </div>
 
           <div className="form-group2">
             <div>
               <label>Product Image*</label>
-              <input type="file" required />
+              <input
+                type="file"
+                required
+                onChange={(e) => setEnterImg(e.target.files[0])}
+              />
             </div>
             <div>
               <label>Price*</label>
-              <input type="number" placeholder="Ex: 200.." required />
+              <input
+                type="number"
+                placeholder="Ex: 200.."
+                required
+                value={enterPrice}
+                onChange={(e) => setEnterPrice(e.target.value)}
+              />
             </div>
             <div>
               <label>Category*</label>
-              <select onChange={() => {}}>
+              <select
+                value={enterCategory}
+                onChange={(e) => {
+                  setEnterCategory(e.target.value)
+                }}
+              >
                 <option value="sofa">Sofa</option>
                 <option value="chair">Chair</option>
                 <option value="sofa">Mobile</option>
