@@ -28,26 +28,28 @@ const AddProducts = () => {
             />
           </div>
 
-          <div className="form-group">
-            <label>Price*</label>
-            <input type="number" placeholder="Ex: 200.." required />
+          <div className="form-group2">
+            <div>
+              <label>Product Image*</label>
+              <input type="file" required />
+            </div>
+            <div>
+              <label>Price*</label>
+              <input type="number" placeholder="Ex: 200.." required />
+            </div>
+            <div>
+              <label>Category*</label>
+              <select onChange={() => {}}>
+                <option value="sofa">Sofa</option>
+                <option value="chair">Chair</option>
+                <option value="sofa">Mobile</option>
+                <option value="watch">Watch</option>
+                <option value="wireless">Wireless</option>
+              </select>
+            </div>
           </div>
 
-          <div className="form-group">
-            <label>Category*</label>
-            <select onChange={() => {}}>
-              <option value="sofa">Sofa</option>
-              <option value="chair">Chair</option>
-              <option value="sofa">Mobile</option>
-              <option value="watch">Watch</option>
-              <option value="wireless">Wireless</option>
-            </select>
-          </div>
-
-          <div className="form-group">
-            <label>Product Image*</label>
-            <input type="file" required />
-          </div>
+          <div className="form-group"></div>
 
           <div className="addProducts-btn">
             <motion.button

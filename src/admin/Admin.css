@@ -76,13 +76,24 @@
   margin: .3rem 0;
 }
 
-.form-group select {
+.form-group2 {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.form-group2 div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group2 select {
   width: fit-content;
   padding: .5rem;
   outline: auto;
 }
 
-.form-group input[type=file] {
+.form-group2 input[type=file] {
   width: fit-content;
 }
 
