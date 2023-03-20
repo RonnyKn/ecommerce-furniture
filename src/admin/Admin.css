@@ -69,6 +69,32 @@
   font-weight: bold;
 }
 
+/* ============ADD PRODUCTS========== */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: .3rem 0;
+}
+
+.form-group select {
+  width: fit-content;
+  padding: .5rem;
+  outline: auto;
+}
+
+.form-group input[type=file] {
+  width: fit-content;
+}
+
+.addProducts-btn button {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+
 /* =========MEDIA QUERIES====== */
 @media screen and (max-width:768px) {
   .dashboard-container {

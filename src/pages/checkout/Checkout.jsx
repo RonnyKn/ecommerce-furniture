@@ -29,7 +29,7 @@ const Checkout = () => {
             }}
           >
             <strong>Fill your data to complete your Shipping</strong>
-            <em>(*) Required</em>
+            <p className="required-text">(*) Required</p>
             <label>Full Name*</label>
             <input type="text" required placeholder="Enter your fullname..." />
             <label>E-mail*</label>

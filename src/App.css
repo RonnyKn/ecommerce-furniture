@@ -98,3 +98,22 @@ button {
   width: var(--container-width-lg);
   text-align: center;
 }
+
+form input,
+form textarea {
+  outline: auto;
+  padding: .5rem;
+}
+
+form label {
+  margin-top: .5em;
+  font-size: .8rem;
+  font-weight: bold;
+  color: salmon;
+}
+
+.required-text {
+  font-style: italic;
+  font-size: .7rem;
+  font-weight: bold;
+}
