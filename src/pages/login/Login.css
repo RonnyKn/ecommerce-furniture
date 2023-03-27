@@ -30,3 +30,16 @@
   font-weight: bold;
   color: salmon;
 }
+
+.login-button {
+  flex-direction: row !important;
+  gap: .5rem;
+  justify-content: space-between;
+}
+
+.loginWithGoogle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .3rem;
+}
