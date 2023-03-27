@@ -83,6 +83,7 @@ const Signup = () => {
                 placeholder="Enter your User Name.."
                 required
                 value={userName}
+                autoComplete="off"
                 onChange={(e) => setUserName(e.target.value)}
               />
             </div>
@@ -95,6 +96,7 @@ const Signup = () => {
                 placeholder="Enter your email.."
                 required
                 value={email}
+                autoComplete="off"
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
@@ -107,6 +109,7 @@ const Signup = () => {
                 placeholder="Enter your password.."
                 required
                 value={password}
+                autoComplete="off"
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
