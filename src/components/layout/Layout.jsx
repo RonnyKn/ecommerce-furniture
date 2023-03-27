@@ -22,9 +22,6 @@ const Layout = () => {
     }
   }
 
-  // useEffect(() => {
-  //   footerNav()
-  // }, [])
   return (
     <>
       {location.pathname.startsWith("/dashboard") ? <AdminNav /> : <Header />}
@@ -33,8 +30,6 @@ const Layout = () => {
       </div>
       {footerNav()}
       {/* {location.pathname.startsWith("/dashboard") ? null : <Footer />} */}
-      {/* {location.pathname.startsWith("/login") ? null : <Footer />} */}
-      {/* {location.pathname.startsWith("/signup") ? null : <Footer />} */}
     </>
   )
 }
