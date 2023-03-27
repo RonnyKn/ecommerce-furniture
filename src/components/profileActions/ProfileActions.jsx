@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useLocation } from "react-router-dom"
+import { Link, useLocation, useNavigate } from "react-router-dom"
 import { signOut } from "firebase/auth"
 import { auth } from "../../firebaseConfig/firebaseConfig"
 import { toast } from "react-toastify"
@@ -10,6 +10,7 @@ import userIcon from "../../assets/images/user-icon.png"
 
 const ProfileActions = ({ profileActions, setProfileActions, currentUser }) => {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   const logOut = () => {
     signOut(auth)
       .then(() => {
@@ -20,6 +21,8 @@ const ProfileActions = ({ profileActions, setProfileActions, currentUser }) => {
       })
     setProfileActions(false)
     dispatch(setClearCart())
+    navigate("/")
+    window.scroll(0, 0)
   }
   const location = useLocation()
 
