@@ -78,8 +78,8 @@
 
 .form-group2 {
   display: flex;
-  gap: 2rem;
   align-items: center;
+  gap: 3rem;
 }
 
 .form-group2 div {

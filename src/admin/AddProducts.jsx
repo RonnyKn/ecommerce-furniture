@@ -27,7 +27,7 @@ const AddProducts = () => {
 
       const storageRef = ref(
         storage,
-        `productImg/${Date.now() + enterImg?.name}`
+        `productImg/${Date.now().toString() + enterImg.name}`
       )
 
       const uploadTask = uploadBytesResumable(storageRef, enterImg)
@@ -86,6 +86,7 @@ const AddProducts = () => {
                 required
                 value={enterShortDesc}
                 onChange={(e) => setEnterShortDesc(e.target.value)}
+                autoComplete="off"
               />
             </div>
 
@@ -97,6 +98,7 @@ const AddProducts = () => {
                 required
                 value={enterDescription}
                 onChange={(e) => setEnterDescription(e.target.value)}
+                autoComplete="off"
               />
             </div>
 
@@ -117,6 +119,7 @@ const AddProducts = () => {
                   required
                   value={enterPrice}
                   onChange={(e) => setEnterPrice(e.target.value)}
+                  autoComplete="off"
                 />
               </div>
               <div>
