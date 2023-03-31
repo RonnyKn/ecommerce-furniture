@@ -51,7 +51,7 @@ const AdminNav = () => {
           >
             <ul>
               {adminMenus?.map((val, idx) => (
-                <li key={idx}>
+                <li key={idx} onClick={() => setIsnavShow(false)}>
                   <NavLink
                     to={val?.path}
                     className={(navClass) =>
