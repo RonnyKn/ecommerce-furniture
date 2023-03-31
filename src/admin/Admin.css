@@ -28,7 +28,7 @@
   color: var(--color-white);
 }
 
-.admin__nav-menus {
+.admin__nav-menus ul {
   color: var(--color-white);
   display: flex;
   gap: 1rem;
@@ -36,6 +36,15 @@
 
 .admin__nav-active {
   border-bottom: 2px solid var(--color-white);
+}
+
+.admin__nav-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.admin__nav-icons button {
+  display: none;
 }
 
 /* ============DASHBOARD========== */
@@ -122,6 +131,68 @@
     flex-direction: column;
     align-items: start;
     gap: 0;
+  }
+}
+
+
+
+@media screen and (max-width:650px) {
+  .nav-show {
+    display: flex;
+  }
+
+  .nav-hide {
+    display: none;
+  }
+
+  .admin__nav-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .admin__nav-icons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+  }
+
+  .admin__nav-menus {
+    width: 100%;
+  }
+
+  .admin__nav-menus ul {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-white);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(10, 29, 56, .9);
+    transform: rotateX(-90deg);
+    opacity: 0;
+    transform-origin: top;
+    animation: animateNavbar 600ms ease forwards;
+  }
+
+  @keyframes animateNavbar {
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+      transition: var(--transition);
+    }
+  }
+
+  .admin__nav-menus li {
+    width: 100%;
+    font-weight: bold;
   }
 }
 

@@ -3,9 +3,12 @@ import { motion } from "framer-motion"
 import useAuth from "../customHooks/useAuth"
 import { Link, NavLink, useLocation } from "react-router-dom"
 import ProfileActions from "../components/profileActions/ProfileActions"
+import { GiHamburgerMenu } from "react-icons/gi"
+import { MdOutlineClose } from "react-icons/md"
 
 const AdminNav = () => {
   const [profileActions, setProfileActions] = useState(false)
+  const [isNavShow, setIsnavShow] = useState(false)
   const { currentUser } = useAuth()
   const scrollTop = () => {
     window.scroll(0, 0)
@@ -41,26 +44,41 @@ const AdminNav = () => {
         </motion.div>
 
         {location.pathname.includes("products") ? (
-          <div className="admin__nav-menus">
-            {adminMenus?.map((val, idx) => (
-              <NavLink
-                key={idx}
-                to={val?.path}
-                className={(navClass) =>
-                  navClass.isActive ? "admin__nav-active" : null
-                }
-              >
-                {val?.menu}
-              </NavLink>
-            ))}
+          <div
+            className={`admin__nav-menus ${
+              isNavShow ? "nav-show" : "nav-hide"
+            }`}
+          >
+            <ul>
+              {adminMenus?.map((val, idx) => (
+                <li key={idx}>
+                  <NavLink
+                    to={val?.path}
+                    className={(navClass) =>
+                      navClass.isActive ? "admin__nav-active" : null
+                    }
+                  >
+                    {val?.menu}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
           </div>
         ) : null}
-
-        <ProfileActions
-          profileActions={profileActions}
-          setProfileActions={setProfileActions}
-          currentUser={currentUser}
-        />
+        <div className="admin__nav-icons">
+          <ProfileActions
+            profileActions={profileActions}
+            setProfileActions={setProfileActions}
+            currentUser={currentUser}
+          />
+          <button onClick={() => setIsnavShow(!isNavShow)}>
+            {isNavShow ? (
+              <MdOutlineClose size="1.8em" />
+            ) : (
+              <GiHamburgerMenu size="1.8em" />
+            )}
+          </button>
+        </div>
       </div>
     </nav>
   )
