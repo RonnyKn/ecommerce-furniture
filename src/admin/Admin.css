@@ -107,9 +107,21 @@
 
 
 /* =========MEDIA QUERIES====== */
+@media screen and (max-width:850px) {
+  .form-group2 {
+    gap: 1rem;
+  }
+}
+
 @media screen and (max-width:768px) {
   .dashboard-container {
     gap: 1rem;
+  }
+
+  .form-group2 {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
   }
 }
 
@@ -117,4 +129,5 @@
   .dashboard-container {
     grid-template-columns: 1fr;
   }
+
 }
