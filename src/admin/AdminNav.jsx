@@ -71,13 +71,15 @@ const AdminNav = () => {
             setProfileActions={setProfileActions}
             currentUser={currentUser}
           />
-          <button onClick={() => setIsnavShow(!isNavShow)}>
-            {isNavShow ? (
-              <MdOutlineClose size="1.8em" />
-            ) : (
-              <GiHamburgerMenu size="1.8em" />
-            )}
-          </button>
+          {location.pathname.includes("products") ? (
+            <button onClick={() => setIsnavShow(!isNavShow)}>
+              {isNavShow ? (
+                <MdOutlineClose size="1.8em" />
+              ) : (
+                <GiHamburgerMenu size="1.8em" />
+              )}
+            </button>
+          ) : null}
         </div>
       </div>
     </nav>
